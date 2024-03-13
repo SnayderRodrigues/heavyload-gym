@@ -59,47 +59,6 @@
       gap: 1rem;
     }
   }
-  &__learn-more-button-wrapper {
-    display: flex;
-    // flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    position: relative;
-
-    @media (width < 500px) {
-      width: 100% !important;
-    }
-  }
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    background-color: var(--bg);
-    color: var(--white);
-    // border: 2px solid var(--black);
-    // padding: 12px 22px 12px;
-    // padding: 14px 28px 14px;
-
-    @include u.breakpoint-down(small) {
-      background-color: var(--bg);
-      border: none;
-    }
-    @media (width < 500px) {
-      width: 100% !important;
-    }
-  }
-  &__scroll-down-icon {
-    width: 12px;
-    height: 12px;
-    background-color: transparent;
-    border-right: 2px solid var(--white);
-    border-bottom: 2px solid var(--white);
-    margin-bottom: 4px;
-    transform: rotate(45deg);
-    transition: all 200ms linear;
-  }
   //   .design-element-1 {
   //     position: absolute;
   //     left: calc(0% - 500px);

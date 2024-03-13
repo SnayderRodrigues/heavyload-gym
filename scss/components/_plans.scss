@@ -4,6 +4,8 @@
   background-color: var(--white);
   color: var(--black);
   padding: 120px 0;
+  border-top: 8px solid var(--red);
+  border-bottom: 8px solid var(--red);
 
   &__h2-wrapper {
     display: flex;
