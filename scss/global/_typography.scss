@@ -1,0 +1,46 @@
+@use "../util/" as u;
+
+h1,
+h2,
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  span {
+    // display: inline-block;
+    color: var(--red);
+    // &::after {
+    //     content: '';
+    //     height: 2px;
+    //     display: block;
+    //     background-color: var(--green);
+    // }
+  }
+}
+
+h1 {
+  font-size: clamp(
+    u.rem(44),
+    1.8269230769230769rem + 4.615384615384616vw,
+    u.rem(100)
+  );
+}
+
+h2 {
+  font-size: clamp(
+    u.rem(32),
+    1.2241379310344829rem + 3.3103448275862064vw,
+    u.rem(56)
+  );
+}
+
+h3 {
+  font-size: clamp(1.75rem, 1.6206896551724137rem + 0.5517241379310345vw, 2rem);
+  text-transform: none;
+}
+
+// p {
+//     font-size: clamp(u.rem(16), 0.9353448275862069rem + 0.27586206896551724vw, u.rem(18));
+// }

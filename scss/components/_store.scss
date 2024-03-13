@@ -1,0 +1,43 @@
+@use "../util/" as u;
+
+.store {
+  padding: 120px 0;
+  background-color: var(--bg);
+
+  @include u.breakpoint-down(xsmall) {
+    padding: 80px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    position: relative;
+    overflow: hidden;
+  }
+  &__button {
+    position: absolute;
+    top: 86%;
+    right: 4%;
+    z-index: 1;
+    box-shadow: 10px 10px 160px 200px #000;
+  }
+}
