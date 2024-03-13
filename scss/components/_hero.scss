@@ -29,9 +29,10 @@
   }
   &__headline {
     // color: var(--color-white);
-    font-family: "Bebas Neue";
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: -2px;
     margin-bottom: u.rem(40);
-    max-width: 18ch;
+    max-width: 22ch;
     margin-inline: auto;
   }
   &__headline-description {
@@ -69,7 +70,6 @@
     @media (width < 500px) {
       width: 100% !important;
     }
-
   }
   &__button {
     display: flex;
