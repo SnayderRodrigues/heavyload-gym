@@ -1,72 +1,65 @@
-function show(anything){
-    document.querySelector('.header__menu').value = anything;
+function show(anything) {
+  document.querySelector(".header__menu").value = anything;
 }
 
-let menu = document.querySelector('.header__menu');
-let items = document.querySelector('.header__list-div');
+let menu = document.querySelector(".header__menu");
+let items = document.querySelector(".header__list-div");
 
-menu.onclick = function(){
-menu.classList.toggle('open-menu');
-items.classList.toggle('open-menu');
+menu.onclick = function () {
+  menu.classList.toggle("open-menu");
+  items.classList.toggle("open-menu");
 
-items.removeAttribute('style');
+  items.removeAttribute("style");
+};
 
-}
+items.onclick = function () {
+  items.classList.remove("open-menu");
+  menu.classList.remove("open-menu");
+};
 
-items.onclick = function(){
-items.classList.remove('open-menu');
-menu.classList.remove('open-menu');
-}
-
-
-const menuButton = document.querySelector('.header__menu');
-const menuBody = document.querySelector('.header__list-div');
+const menuButton = document.querySelector(".header__menu");
+const menuBody = document.querySelector(".header__list-div");
 const body = document.body;
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener("click", function () {
+  if (menu.classList.contains("open-menu")) {
+    body.style.overflowY = "hidden";
+  } else {
+    body.style.overflowY = "";
+  }
+});
 
-    if (menu.classList.contains('open-menu')) {
-        body.style.overflowY = 'hidden';
+menuBody.addEventListener("click", function () {
+  if (menu.classList.contains("open-menu")) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "";
+  }
+});
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth < 768) {
+    items.style.transition = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var menu = document.querySelector(".header");
+  var top = document.querySelector(".back-to-top");
+  var origOffsetY = document.querySelector(".hero").offsetHeight - 900;
+
+  function scroll() {
+    if (window.scrollY >= origOffsetY) {
+      menu.classList.add("opaque");
+      top.classList.add("opaque");
     } else {
-        body.style.overflowY = '';
+      menu.classList.remove("opaque");
+      top.classList.remove("opaque");
     }
+  }
+
+  document.addEventListener("scroll", scroll);
 });
-
-menuBody.addEventListener('click', function() {
-
-    if (menu.classList.contains('open-menu')) {
-        body.style.overflow = 'hidden';
-    } else {
-        body.style.overflow = '';
-    }
-});
-
-
-
-window.addEventListener('resize', function() {
-    if (window.innerWidth < 768) {
-      items.style.transition = 'none';
-    }
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var menu = document.querySelector('.header');
-    var top = document.querySelector('.back-to-top');
-    var origOffsetY = document.querySelector('.hero').offsetHeight - 200;
-  
-    function scroll() {
-        if (window.scrollY >= origOffsetY) {
-            menu.classList.add('opaque');
-            top.classList.add('opaque');
-        } else {
-            menu.classList.remove('opaque');
-            top.classList.remove('opaque');
-        }
-    }
-  
-    document.addEventListener('scroll', scroll);
-  });
 
 // let sections = document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('header div nav div ul li a');
@@ -87,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //   });
 // };
 
-
 // const checkboxes = document.querySelectorAll('input[name="accordion"]');
 //     checkboxes.forEach((checkbox) => {
 //         checkbox.addEventListener('change', function() {
@@ -98,8 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //             });
 //         });
 //     });
-
-
 
 // const faqs = document.querySelectorAll('.faq__question');
 
@@ -113,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //                 item.classList.remove('active');
 //             }
 //         });
-        
+
 //         // Toggle 'active' class for the clicked element
 //         faq.classList.toggle('active');
 //     });

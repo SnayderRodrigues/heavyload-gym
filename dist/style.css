@@ -338,9 +338,9 @@ h3 {
   padding: 120px 0;
   position: relative;
   background-image: url(/assets/images/gym-bg-darken.jpg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero__wrapper {
   display: flex;
@@ -353,11 +353,11 @@ h3 {
   position: relative;
   max-width: 850px;
   margin-top: 7.5rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.5rem;
 }
 .hero__headline {
   font-family: "Bebas Neue";
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.5rem;
   max-width: 18ch;
   margin-inline: auto;
 }
@@ -399,14 +399,12 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-color: transparent;
+  background-color: var(--bg);
   color: var(--white);
-  border: 2px solid var(--black);
-  padding: 14px 28px 14px;
 }
 @media (max-width: 47.99875em) {
   .hero__button {
-    background-color: var(--black);
+    background-color: var(--bg);
     border: none;
   }
 }
@@ -805,9 +803,9 @@ h3 {
   width: 100%;
   height: 800px;
   background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
 }
