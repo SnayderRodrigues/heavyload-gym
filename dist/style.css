@@ -50,7 +50,7 @@ a:active {
 }
 .link .link-text-1,
 .link .link-text-2 {
-  transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 200ms ease-in;
 }
 .link .link-text-2 {
   position: absolute;
@@ -281,7 +281,7 @@ h3 {
 }
 .header__link .link-text-1,
 .header__link .link-text-2 {
-  transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 200ms ease-in;
 }
 .header__link .link-text-2 {
   color: var(--red);
@@ -1114,7 +1114,7 @@ h3 {
   justify-content: space-between;
   border-top: 4px solid var(--red);
 }
-.footer__below span {
+.footer__below .copyright {
   margin-top: 1rem;
 }
 .footer__below-items {
