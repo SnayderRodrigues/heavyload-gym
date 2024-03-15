@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: var(--bg);
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.125rem, 0.9353448276rem + 0.275862069vw, 1.25rem);
@@ -323,7 +324,7 @@ h3 {
   text-align: center;
   padding: 120px 0;
   position: relative;
-  background-image: url(/assets/images/gym-bg-darken.jpg);
+  background-image: url(/assets/images/gym-bg-darken.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -749,7 +750,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 800px;
-  background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg);
+  background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
