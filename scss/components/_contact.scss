@@ -97,6 +97,10 @@
     width: 100%;
     text-align: center;
     padding: 12px 30px 12px;
+
+    &:hover {
+      background-color: var(--black);
+    }
   }
   // &__form-submit-text {
   //     font-size: u.rem(16);
@@ -112,6 +116,7 @@
     // line-height: 1;
     background-color: var(--black);
     border: 0;
+    padding: 12px 8px;
     transition: border 200ms linear;
   }
   .message {

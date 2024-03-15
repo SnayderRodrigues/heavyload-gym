@@ -155,13 +155,13 @@ h3 {
 }
 @media (min-width: 56.25em) {
   .button {
-    padding: 16px 30px 16px;
+    padding: 14px 30px 14px;
   }
 }
 .button:hover {
   cursor: pointer;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--bg);
 }
 
 .header {
@@ -676,8 +676,10 @@ h3 {
   max-width: 35.8125rem;
   background-color: var(--gray);
   color: var(--black);
-  border-radius: 1.125rem;
   padding: 44px;
+  border-radius: 1.125rem;
+  border: 4px solid transparent;
+  transition: border 200ms ease-in-out;
 }
 @media (899px >= width >= 700px) {
   .plans__item {
@@ -686,6 +688,9 @@ h3 {
     text-align: left;
     justify-items: start;
   }
+}
+.plans__item:hover {
+  border: 4px solid var(--red);
 }
 .plans__item ul {
   margin-bottom: 2rem;
@@ -875,6 +880,9 @@ h3 {
   text-align: center;
   padding: 12px 30px 12px;
 }
+.contact__button:hover {
+  background-color: var(--black);
+}
 .contact .form-control {
   margin-bottom: 1rem;
   width: 100%;
@@ -884,6 +892,7 @@ h3 {
   font-size: 1.125rem;
   background-color: var(--black);
   border: 0;
+  padding: 12px 8px;
   transition: border 200ms linear;
 }
 .contact .message {
@@ -991,6 +1000,17 @@ h3 {
 }
 .footer__icon path {
   transition: fill 200ms ease-in-out;
+}
+.footer__form-div {
+  display: flex;
+}
+.footer__form {
+  width: 60%;
+  font-size: 1.125rem;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 12px 16px;
+  margin-right: 1rem;
 }
 .footer__nav-div {
   display: flex;

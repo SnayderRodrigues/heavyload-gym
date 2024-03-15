@@ -65,6 +65,17 @@
       transition: fill 200ms ease-in-out;
     }
   }
+  &__form-div {
+    display: flex;
+  }
+  &__form {
+    width: 60%;
+    font-size: u.rem(18);
+    color: var(--black);
+    background-color: var(--white);
+    padding: 12px 16px;
+    margin-right: 1rem;
+  }
   &__nav-div {
     display: flex;
     gap: 100px;

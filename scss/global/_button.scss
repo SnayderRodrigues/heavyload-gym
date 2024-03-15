@@ -16,13 +16,13 @@
   z-index: 1;
 
   @include u.breakpoint-up(large) {
-    padding: 16px 30px 16px;
+    padding: 14px 30px 14px;
   }
 
   &:hover {
     cursor: pointer;
     // border: 2px solid var(--black);
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--bg);
   }
 }
