@@ -27,29 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     width: 40%;
-  }
-  &__whatsapp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // gap: 1rem;
-    width: 100%;
-    background-color: var(--bg);
-    color: var(--white);
-    padding: 60px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
-
-    @include u.breakpoint-down(midlarge) {
-      justify-content: start;
-    }
-    @include u.breakpoint-down(small) {
-      justify-content: start;
-    }
-    @include u.breakpoint-down(xsmall) {
-      padding: 32px 16px;
-    }
   }
   &__form {
     display: flex;
@@ -61,6 +39,7 @@
     color: var(--white);
     padding: 60px;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
 
     @include u.breakpoint-down(midlarge) {
       justify-content: start;
@@ -126,6 +105,27 @@
   &__whatsapp {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    // gap: 1rem;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--white);
+    padding: 60px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+
+    @include u.breakpoint-down(midlarge) {
+      justify-content: start;
+    }
+    @include u.breakpoint-down(small) {
+      justify-content: start;
+    }
+    @include u.breakpoint-down(xsmall) {
+      padding: 32px 16px;
+    }
+  }
+  &__whatsapp {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
   .whatsapp-headline {
@@ -170,6 +170,7 @@
 
     img {
       height: 100%;
+      max-height: 1025.56px;
       object-fit: cover;
     }
   }
