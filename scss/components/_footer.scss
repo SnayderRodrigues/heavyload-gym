@@ -119,10 +119,10 @@
       font-size: 1.5rem;
     }
     a {
+      justify-content: flex-start;
       color: var(--white);
-      transition: color 200ms linear;
     }
-    a:hover {
+    .link-text-2 {
       color: var(--red);
     }
 
@@ -149,11 +149,11 @@
 
     a {
       color: var(--white);
-      transition: color 200ms linear;
 
-      &:hover {
-        color: var(--red);
-      }
+    }
+
+    .link-text-2 {
+      color: var(--red);
     }
   }
 }

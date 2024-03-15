@@ -87,13 +87,30 @@
     }
   }
   &__link {
+    display: flex;
+    width: 100%;
     font-weight: 600;
     color: var(--white);
     text-transform: uppercase;
-    transition: color 200ms ease-in-out;
+    position: relative;
+    overflow: hidden;
 
-    &:hover {
+    .link-text-1,
+    .link-text-2 {
+      transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .link-text-2 {
       color: var(--red);
+      position: absolute;
+      transform: translateY(100%);
+    }
+
+    &:hover .link-text-1 {
+      // color: var(--red);
+      transform: translateY(-100%);
+    }
+    &:hover .link-text-2 {
+      transform: translateY(0%);
     }
   }
   &__button {

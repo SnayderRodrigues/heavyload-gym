@@ -41,6 +41,28 @@ a:active {
   text-decoration: none;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.link .link-text-1,
+.link .link-text-2 {
+  transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link .link-text-2 {
+  position: absolute;
+  transform: translateY(3rem);
+}
+.link:hover .link-text-1 {
+  transform: translateY(-3rem);
+}
+.link:hover .link-text-2 {
+  transform: translateY(0%);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -249,13 +271,28 @@ h3 {
   }
 }
 .header__link {
+  display: flex;
+  width: 100%;
   font-weight: 600;
   color: var(--white);
   text-transform: uppercase;
-  transition: color 200ms ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
-.header__link:hover {
+.header__link .link-text-1,
+.header__link .link-text-2 {
+  transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.header__link .link-text-2 {
   color: var(--red);
+  position: absolute;
+  transform: translateY(100%);
+}
+.header__link:hover .link-text-1 {
+  transform: translateY(-100%);
+}
+.header__link:hover .link-text-2 {
+  transform: translateY(0%);
 }
 .header__button {
   padding: 4px 12px;
@@ -414,9 +451,6 @@ h3 {
 }
 .back-to-top__button:hover {
   background-color: var(--red);
-}
-.back-to-top__button:hover .back-to-top__scroll-up-icon {
-  transform: translateY(-4px) rotate(45deg);
 }
 .back-to-top__scroll-up-icon {
   width: 16px;
@@ -783,6 +817,7 @@ h3 {
 }
 .contact__wrapper {
   display: flex;
+  align-items: flex-start;
   gap: 1rem;
 }
 @media (max-width: 47.99875em) {
@@ -802,6 +837,11 @@ h3 {
   flex-direction: column;
   justify-content: center;
   width: 40%;
+}
+@media (max-width: 47.99875em) {
+  .contact__cards {
+    width: 100%;
+  }
 }
 .contact__form {
   display: flex;
@@ -1057,10 +1097,10 @@ h3 {
   font-size: 1.5rem;
 }
 .footer__navigation a {
+  justify-content: flex-start;
   color: var(--white);
-  transition: color 200ms linear;
 }
-.footer__navigation a:hover {
+.footer__navigation .link-text-2 {
   color: var(--red);
 }
 @media (max-width: 26.62375em) {
@@ -1086,8 +1126,7 @@ h3 {
 }
 .footer__below-items a {
   color: var(--white);
-  transition: color 200ms linear;
 }
-.footer__below-items a:hover {
+.footer__below-items .link-text-2 {
   color: var(--red);
 }/*# sourceMappingURL=style.css.map */

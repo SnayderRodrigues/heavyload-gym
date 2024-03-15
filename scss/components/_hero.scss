@@ -128,9 +128,6 @@
 
     &:hover {
       background-color: var(--red);
-      .back-to-top__scroll-up-icon {
-        transform: translateY(-4px) rotate(45deg);
-      }
     }
   }
   &__scroll-up-icon {
