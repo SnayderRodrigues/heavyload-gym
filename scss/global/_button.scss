@@ -6,6 +6,7 @@
   color: var(--white);
   font-weight: 600;
   text-transform: uppercase;
+  text-wrap: nowrap;
   background-color: var(--red);
   // border: 2px solid var(--green);
   // border-radius: 999px;
@@ -15,14 +16,22 @@
   text-decoration: none;
   z-index: 1;
 
-  @include u.breakpoint-up(large) {
-    padding: 14px 30px 14px;
-  }
-
   &:hover {
     cursor: pointer;
     // border: 2px solid var(--black);
     color: var(--white);
     background-color: var(--bg);
+  }
+
+  @include u.breakpoint-down(small) {
+    font-size: u.rem(14);
+    &:hover {
+      background-color: var(--red);
+
+    }
+  }
+
+  @include u.breakpoint-up(large) {
+    padding: 14px 30px 14px;
   }
 }

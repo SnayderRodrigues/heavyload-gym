@@ -72,19 +72,20 @@
     transition: border 200ms ease-in-out, background-color 200ms ease-in-out,
       color 0ms, transform 300ms ease-in-out, color 200ms ease-in-out;
 
+    &:hover {
+      border: 4px solid var(--red);
+    }
+
     @include u.breakpoint-down(small) {
       padding: 24px;
+
+      &:hover {
+        border: 4px solid transparent;
+      }
     }
 
     @include u.breakpoint-down(xsmall) {
       padding: 16px;
-      background-color: var(--white);
-      border: 4px solid var(--bg);
-      color: var(--black);
-    }
-
-    &:hover {
-      border: 4px solid var(--red);
     }
 
     h3 {
