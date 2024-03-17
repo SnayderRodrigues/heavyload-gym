@@ -507,11 +507,6 @@ h3 {
   flex-direction: column;
   gap: 80px;
 }
-@media (max-width: 47.99875em) {
-  .about__wrapper {
-    flex-direction: column;
-  }
-}
 @media (max-width: 69.99875em) {
   .about__wrapper {
     gap: 80px;
@@ -521,6 +516,12 @@ h3 {
     width: 100%;
     position: relative;
     top: 0;
+  }
+}
+@media (max-width: 47.99875em) {
+  .about__wrapper {
+    flex-direction: column;
+    gap: 50px;
   }
 }
 .about__description-wrapper {

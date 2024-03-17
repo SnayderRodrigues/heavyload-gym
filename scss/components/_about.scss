@@ -23,9 +23,6 @@
     // justify-content: center;
     gap: 80px;
 
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-    }
     @include u.breakpoint-down(midlarge) {
       gap: 80px;
       flex-direction: column;
@@ -35,6 +32,10 @@
         position: relative;
         top: 0;
       }
+    }
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 50px;
     }
   }
   &__description-wrapper {
