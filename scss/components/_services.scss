@@ -55,7 +55,7 @@
     grid-gap: 3.5625rem 2.375rem;
     grid-template-columns: repeat(auto-fit, minmax(30.625rem, 1fr));
 
-    @include u.breakpoint-down(xsmall) {
+    @include u.breakpoint-down(small2) {
       grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
     }
   }

@@ -30,7 +30,7 @@
     justify-content: center;
     width: 40%;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       width: 100%;
     }
   }
@@ -80,7 +80,7 @@
   &__button {
     width: 100%;
     text-align: center;
-    padding: 12px 30px 12px;
+    padding: 16px 30px 16px;
 
     &:hover {
       background-color: var(--black);

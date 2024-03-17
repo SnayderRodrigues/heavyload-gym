@@ -1,12 +1,13 @@
 @use "../util/" as u;
 
 .button {
-  padding: 12px 22px 12px;
+  padding: 16px 22px 16px;
   // display: inline-block;
   color: var(--white);
   font-weight: 600;
   text-transform: uppercase;
   text-wrap: nowrap;
+  line-height: normal;
   background-color: var(--red);
   // border: 2px solid var(--green);
   // border-radius: 999px;
@@ -27,7 +28,6 @@
     font-size: u.rem(14);
     &:hover {
       background-color: var(--red);
-
     }
   }
 

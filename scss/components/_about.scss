@@ -76,6 +76,7 @@
     @include u.breakpoint-down(midlarge) {
       width: 100%;
       max-height: 600px;
+      order: -1;
     }
   }
   &__image {
@@ -86,7 +87,6 @@
 
     @include u.breakpoint-down(midlarge) {
       width: 100%;
-      max-height: 600px;
     }
     // @include u.breakpoint-down(midlarge) {
     //     height: 600px;
