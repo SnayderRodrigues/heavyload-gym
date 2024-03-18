@@ -62,18 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let count = 1;
-document.getElementById("radio1").checked = true;
+document.getElementById("radio-1").checked = true;
 
-setInterval( function() {
+setInterval(function () {
   nextImage();
-}, 3000);
+}, 6000);
 
 function nextImage() {
   count++;
-  if (count > 3) {
+  if (count > 2) {
     count = 1;
   }
-  document.getElementById("radio"+count).checked = true;
+  document.getElementById("radio-" + count).checked = true;
 }
 
 // let sections = document.querySelectorAll('section');
