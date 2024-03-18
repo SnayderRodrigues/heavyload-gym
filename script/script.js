@@ -38,7 +38,7 @@ menuBody.addEventListener("click", function () {
 });
 
 window.addEventListener("resize", function () {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 900) {
     items.style.transition = "none";
   }
 });
