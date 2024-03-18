@@ -61,6 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("scroll", scroll);
 });
 
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function() {
+  nextImage();
+}, 3000);
+
+function nextImage() {
+  count++;
+  if (count > 3) {
+    count = 1;
+  }
+  document.getElementById("radio"+count).checked = true;
+}
+
 // let sections = document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('header div nav div ul li a');
 

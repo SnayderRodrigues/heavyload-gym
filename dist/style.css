@@ -638,6 +638,11 @@ h3 {
   grid-gap: 3.5625rem 2.375rem;
   grid-template-columns: repeat(auto-fit, minmax(30.625rem, 1fr));
 }
+@media (max-width: 47.99875em) {
+  .services__cards-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(26.675rem, 1fr));
+  }
+}
 @media (max-width: 31.18625em) {
   .services__cards-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
@@ -884,6 +889,86 @@ h3 {
 .store__outside-card h3,
 .store__outside-card p {
   margin-bottom: 1rem;
+}
+.store .slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.store .slides {
+  width: 400%;
+  height: 800px;
+  display: flex;
+}
+.store .slides input {
+  display: none;
+}
+.store .slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.store .slide img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.store .manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.store .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.store .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.store .manual-btn:hover {
+  background-color: #fff;
+}
+.store #radio1:checked ~ .first {
+  margin-left: 0;
+}
+.store #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+.store #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+.store .navigation-auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.store .navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+.store .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+.store #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+.store #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+.store #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
 }
 
 .contact {
