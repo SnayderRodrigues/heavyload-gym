@@ -136,13 +136,13 @@
   .second {
     margin-right: -100%;
   }
-  #radio1:checked ~ .first {
+  #radio-1:checked ~ .first {
     margin-left: 0;
   }
-  #radio2:checked ~ .first {
+  #radio-2:checked ~ .first {
     margin-left: -100%;
   }
-  #radio2:checked ~ .second {
+  #radio-2:checked ~ .second {
     margin-right: 0;
   }
   .navigation-auto div {
@@ -162,10 +162,10 @@
   .navigation-auto div:not(:last-child) {
     margin-right: 40px;
   }
-  #radio1:checked ~ .navigation-auto .auto-btn1 {
+  #radio-1:checked ~ .navigation-auto .auto-btn1 {
     background-color: #fff;
   }
-  #radio2:checked ~ .navigation-auto .auto-btn2 {
+  #radio-2:checked ~ .navigation-auto .auto-btn2 {
     background-color: #fff;
   }
 }

@@ -941,13 +941,13 @@ h3 {
 .store .second {
   margin-right: -100%;
 }
-.store #radio1:checked ~ .first {
+.store #radio-1:checked ~ .first {
   margin-left: 0;
 }
-.store #radio2:checked ~ .first {
+.store #radio-2:checked ~ .first {
   margin-left: -100%;
 }
-.store #radio2:checked ~ .second {
+.store #radio-2:checked ~ .second {
   margin-right: 0;
 }
 .store .navigation-auto div {
@@ -967,10 +967,10 @@ h3 {
 .store .navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
-.store #radio1:checked ~ .navigation-auto .auto-btn1 {
+.store #radio-1:checked ~ .navigation-auto .auto-btn1 {
   background-color: #fff;
 }
-.store #radio2:checked ~ .navigation-auto .auto-btn2 {
+.store #radio-2:checked ~ .navigation-auto .auto-btn2 {
   background-color: #fff;
 }
 
