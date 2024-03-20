@@ -943,27 +943,7 @@ h3 {
 .store__slide {
   width: 100%;
   position: relative;
-  transition: 700ms ease-in-out;
-}
-.store .manual-navigation {
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-.store .manual-btn {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 300ms linear;
-}
-.store .manual-btn:not(:last-child) {
-  margin-right: 40px;
-}
-.store .manual-btn:hover {
-  background-color: #fff;
+  transition: 700ms ease-out;
 }
 .store .first {
   width: 100%;
@@ -1013,39 +993,6 @@ h3 {
 }
 .store #radio-2:checked ~ .second {
   margin-right: 0;
-}
-.store .navigation-auto div {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 300ms linear;
-}
-.store .navigation-auto {
-  position: absolute;
-  width: 100%;
-  margin-top: 760px;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 47.99875em) {
-  .store .navigation-auto {
-    margin-top: 560px;
-  }
-}
-@media (max-width: 31.18625em) {
-  .store .navigation-auto {
-    margin-top: 360px;
-  }
-}
-.store .navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-.store #radio-1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: #fff;
-}
-.store #radio-2:checked ~ .navigation-auto .auto-btn2 {
-  background-color: #fff;
 }
 
 .contact {
@@ -1369,7 +1316,7 @@ h3 {
     order: -1;
   }
 }
-@media (max-width: 26.62375em) {
+@media (max-width: 31.18625em) {
   .footer__nav-div {
     flex-direction: column;
     align-items: center;
@@ -1391,7 +1338,7 @@ h3 {
 .footer__navigation .link-text-2 {
   color: var(--red);
 }
-@media (max-width: 26.62375em) {
+@media (max-width: 31.18625em) {
   .footer__navigation {
     align-items: center;
   }
