@@ -46,7 +46,7 @@ window.addEventListener("resize", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var menu = document.querySelector(".header");
   var top = document.querySelector(".back-to-top");
-  var origOffsetY = document.querySelector(".hero").offsetHeight - 900;
+  var origOffsetY = document.querySelector(".hero").offsetHeight - 700;
 
   function scroll() {
     if (window.scrollY >= origOffsetY) {

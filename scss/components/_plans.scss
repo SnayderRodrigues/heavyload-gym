@@ -81,6 +81,10 @@
 
     & ul {
       margin-bottom: 2rem;
+
+      @include u.breakpoint-down(xsmall) {
+        margin-bottom: 1rem;
+      }
     }
     & ul li {
       display: flex;
@@ -97,6 +101,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include u.breakpoint-down(xsmall) {
+      gap: 1rem;
+    }
   }
   .promo {
     display: flex;

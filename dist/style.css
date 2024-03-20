@@ -193,7 +193,7 @@ h3 {
 }
 @media (min-width: 56.25em) {
   .button {
-    padding: 14px 30px 14px;
+    padding: 16px 30px 16px;
   }
 }
 
@@ -782,6 +782,11 @@ h3 {
 .plans__item ul {
   margin-bottom: 2rem;
 }
+@media (max-width: 26.62375em) {
+  .plans__item ul {
+    margin-bottom: 1rem;
+  }
+}
 .plans__item ul li {
   display: flex;
   align-items: center;
@@ -796,6 +801,11 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 26.62375em) {
+  .plans__item-div {
+    gap: 1rem;
+  }
 }
 .plans .promo {
   display: flex;
