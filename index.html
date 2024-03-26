@@ -681,5 +681,23 @@
       </div>
     </footer>
     <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+      if (window.innerWidth > 768) {
+        const lenis = new Lenis({
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      } else {
+        document.documentElement.style.scrollBehavior = 'smooth';
+      }
+    </script>
   </body>
 </html>
