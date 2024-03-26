@@ -872,16 +872,21 @@ h3 {
   align-items: flex-end;
   justify-content: right;
   width: 100%;
-  height: 800px;
+  height: 700px;
   padding: 3rem;
   padding: 3rem;
   border-radius: 1.125rem;
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 89.99875em) {
   .store__card {
     height: 600px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .store__card {
+    height: 500px;
   }
 }
 @media (max-width: 31.18625em) {
@@ -938,12 +943,17 @@ h3 {
   z-index: 0;
   margin: 0 auto;
   width: 100%;
-  height: 800px;
+  height: 700px;
   overflow: hidden;
+}
+@media (max-width: 89.99875em) {
+  .store__slider {
+    height: 600px;
+  }
 }
 @media (max-width: 47.99875em) {
   .store__slider {
-    height: 600px;
+    height: 500px;
   }
 }
 @media (max-width: 31.18625em) {
@@ -953,12 +963,17 @@ h3 {
 }
 .store__slides-div {
   width: 100%;
-  height: 800px;
+  height: 700px;
   display: flex;
+}
+@media (max-width: 89.99875em) {
+  .store__slides-div {
+    height: 600px;
+  }
 }
 @media (max-width: 47.99875em) {
   .store__slides-div {
-    height: 600px;
+    height: 500px;
   }
 }
 @media (max-width: 31.18625em) {
@@ -976,16 +991,21 @@ h3 {
 }
 .store .first {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -100%;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 89.99875em) {
   .store .first {
     height: 600px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .store .first {
+    height: 500px;
   }
 }
 @media (max-width: 31.18625em) {
@@ -996,16 +1016,21 @@ h3 {
 }
 .store .second {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-image: url(/assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: -100%;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 89.99875em) {
   .store .second {
     height: 600px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .store .second {
+    height: 500px;
   }
 }
 @media (max-width: 31.18625em) {

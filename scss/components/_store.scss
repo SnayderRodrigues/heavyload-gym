@@ -25,7 +25,7 @@
     align-items: flex-end;
     justify-content: right;
     width: 100%;
-    height: 800px;
+    height: 700px;
     // background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
     // background-position: center;
     // background-repeat: no-repeat;
@@ -36,8 +36,11 @@
     position: relative;
     overflow: hidden;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(large) {
       height: 600px;
+    }
+    @include u.breakpoint-down(small) {
+      height: 500px;
     }
     @include u.breakpoint-down(small2) {
       height: 400px;
@@ -92,11 +95,14 @@
     z-index: 0;
     margin: 0 auto;
     width: 100%;
-    height: 800px;
+    height: 700px;
     overflow: hidden;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(large) {
       height: 600px;
+    }
+    @include u.breakpoint-down(small) {
+      height: 500px;
     }
     @include u.breakpoint-down(small2) {
       height: 400px;
@@ -104,11 +110,14 @@
   }
   &__slides-div {
     width: 100%;
-    height: 800px;
+    height: 700px;
     display: flex;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(large) {
       height: 600px;
+    }
+    @include u.breakpoint-down(small) {
+      height: 500px;
     }
     @include u.breakpoint-down(small2) {
       height: 400px;
@@ -144,15 +153,18 @@
   // }
   .first {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -100%;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(large) {
       height: 600px;
+    }
+    @include u.breakpoint-down(small) {
+      height: 500px;
     }
     @include u.breakpoint-down(small2) {
       height: 400px;
@@ -161,15 +173,18 @@
   }
   .second {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-image: url(/assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: -100%;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(large) {
       height: 600px;
+    }
+    @include u.breakpoint-down(small) {
+      height: 500px;
     }
     @include u.breakpoint-down(small2) {
       height: 400px;
