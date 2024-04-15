@@ -1,0 +1,22 @@
+@use "../util/" as u;
+
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+
+
+  span {
+    font-size: clamp(
+      u.rem(44),
+      1.8269230769230769rem + 4.615384615384616vw,
+      u.rem(84)
+    );
+    font-weight: 700;
+  }
+}

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -147,6 +151,10 @@ textarea:focus-visible {
   visibility: hidden;
 }
 
+.highlight {
+  color: var(--red);
+}
+
 :root {
   --yellow: #fff7e5;
   --red: #d50000;
@@ -161,7 +169,7 @@ h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -214,6 +222,21 @@ h3 {
   .button {
     padding: 16px 30px 16px;
   }
+}
+
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+#preloader span {
+  font-size: clamp(2.75rem, 1.8269230769rem + 4.6153846154vw, 5.25rem);
+  font-weight: 700;
 }
 
 .header {
@@ -875,7 +898,6 @@ h3 {
   height: 700px;
   padding: 3rem;
   padding: 3rem;
-  border-radius: 1.125rem;
   position: relative;
   overflow: hidden;
 }
@@ -903,7 +925,7 @@ h3 {
   width: 400px;
   background-color: var(--white);
   padding: 3rem;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.35);
   position: relative;
   z-index: 1;
 }

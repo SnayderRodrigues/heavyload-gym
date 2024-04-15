@@ -135,3 +135,9 @@ document.querySelectorAll('a[href^="#"]').forEach((el) => {
     }
   });
 });
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function() {
+  loader.style.display = "none";
+});
