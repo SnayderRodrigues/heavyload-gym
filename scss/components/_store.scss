@@ -59,9 +59,10 @@
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.35);
     position: relative;
     z-index: 1;
-
+    
     @include u.breakpoint-down(small) {
       display: none;
+      padding: 2rem;
     }
 
     h3,
@@ -80,11 +81,12 @@
     padding: 3rem;
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
-
+    
     @include u.breakpoint-down(small) {
       display: flex;
+      padding: 2rem;
     }
-
+    
     h3,
     p {
       margin-bottom: 1rem;

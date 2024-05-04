@@ -75,11 +75,11 @@
       transform 300ms ease-in-out, color 200ms ease-in-out;
 
     @include u.breakpoint-down(small) {
-      padding: 24px;
+      padding: 2rem;
     }
 
     @include u.breakpoint-down(xsmall) {
-      padding: 16px;
+      padding: 1.5rem;
     }
 
     h3 {

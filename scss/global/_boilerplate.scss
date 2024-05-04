@@ -15,12 +15,11 @@ body {
   background-color: var(--bg);
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: u.rem(18);
-  // font-size: clamp(
-  //   u.rem(18),
-  //   0.9353448275862069rem + 0.27586206896551724vw,
-  //   u.rem(20)
-  // );
+  font-size: clamp(
+    u.rem(16),
+    0.9353448275862069rem + 0.27586206896551724vw,
+    u.rem(18)
+  );
   line-height: 1.78;
   overflow-x: hidden;
   color: var(--white);
