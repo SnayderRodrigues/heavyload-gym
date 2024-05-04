@@ -93,7 +93,7 @@
       margin-bottom: 1rem;
     }
   }
-  &__item:last-child {
+  &__item:not(:first-child) {
     background-color: var(--black);
     color: var(--white);
   }

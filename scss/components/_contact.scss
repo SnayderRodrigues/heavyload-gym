@@ -43,6 +43,7 @@
     background-color: var(--bg);
     color: var(--white);
     padding: 60px;
+    border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
     margin-bottom: 1rem;
 
@@ -117,6 +118,7 @@
     background-color: var(--bg);
     color: var(--white);
     padding: 60px;
+    border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 
     @include u.breakpoint-down(midlarge) {
@@ -177,6 +179,7 @@
     img {
       height: 100%;
       max-height: 1025.56px;
+      border-radius: 1.125rem;
       object-fit: cover;
     }
   }
