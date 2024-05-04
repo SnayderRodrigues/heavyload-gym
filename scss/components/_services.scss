@@ -52,7 +52,7 @@
   }
   &__cards-wrapper {
     display: grid;
-    grid-gap: 3.5625rem 2.375rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(30.625rem, 1fr));
 
     @include u.breakpoint-down(small) {
@@ -67,24 +67,15 @@
     flex-direction: column;
     width: 100%;
     min-height: 100%;
-    padding: 36px;
+    padding: 2.5rem;
     background-color: var(--bg);
     color: var(--white);
-    border: 4px solid transparent;
     border-radius: 1.125rem;
-    transition: border 200ms ease-in-out, background-color 200ms ease-in-out,
-      color 0ms, transform 300ms ease-in-out, color 200ms ease-in-out;
-
-    &:hover {
-      border: 4px solid var(--red);
-    }
+    transition: background-color 200ms ease-in-out, color 0ms,
+      transform 300ms ease-in-out, color 200ms ease-in-out;
 
     @include u.breakpoint-down(small) {
       padding: 24px;
-
-      &:hover {
-        border: 4px solid transparent;
-      }
     }
 
     @include u.breakpoint-down(xsmall) {
