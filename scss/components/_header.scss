@@ -116,7 +116,7 @@
     }
   }
   &__button {
-    padding: 8px 12px;
+    padding: 12px 16px;
 
     @include u.breakpoint-down(small2) {
       display: none;
