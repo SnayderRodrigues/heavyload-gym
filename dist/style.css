@@ -76,6 +76,13 @@ img {
   height: auto;
 }
 
+button {
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  border: 0;
+}
+
 input {
   background: 0 0;
   border-radius: 0;
@@ -549,11 +556,9 @@ h3 {
 .about__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 80px;
 }
 @media (max-width: 69.99875em) {
   .about__wrapper {
-    gap: 80px;
     flex-direction: column;
   }
   .about__wrapper .about__description {
@@ -565,11 +570,10 @@ h3 {
 @media (max-width: 47.99875em) {
   .about__wrapper {
     flex-direction: column;
-    gap: 50px;
   }
 }
 .about__description-wrapper {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 2rem;
   width: 100%;
@@ -582,11 +586,14 @@ h3 {
     gap: 3rem;
   }
 }
-.about__description-wrapper .highlight {
-  color: var(--red);
-}
-.about__description-wrapper .margin-bottom {
+.about__description-wrapper h2 {
   margin-bottom: 2rem;
+}
+.about__description-wrapper.open, .about__description-wrapper.active {
+  display: flex;
+}
+.about__description-wrapper:not(:last-child).open {
+  margin-bottom: 4rem;
 }
 .about__description-text {
   width: 50%;
@@ -601,6 +608,14 @@ h3 {
 }
 .about__description-text p {
   margin-bottom: 1rem;
+}
+.about__description-button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about__description-button:hover {
+  background-color: var(--black);
 }
 .about__image-wrapper {
   width: 50%;

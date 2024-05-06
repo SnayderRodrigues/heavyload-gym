@@ -57,7 +57,27 @@ window.addEventListener("scroll", function () {
     header.classList.remove("opaque");
     topButton.classList.remove("visible");
   }
-  
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".about__description-button");
+  const button2 = document.querySelector(".about__description-button-2");
+  const descriptionWrappers = document.querySelectorAll(
+    ".about__description-wrapper"
+  );
+
+  button.addEventListener("click", function () {
+    descriptionWrappers.forEach(function (wrapper) {
+      wrapper.classList.add("open");
+      button.style.display = "none";
+    });
+  });
+  button2.addEventListener("click", function () {
+    descriptionWrappers.forEach(function (wrapper) {
+      wrapper.classList.remove("open");
+      button.style.display = "block";
+    });
+  });
 });
 
 let count = 1;
@@ -78,6 +98,6 @@ function nextImage() {
 
 var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function() {
-  loader.classList.add("loaded")
+window.addEventListener("load", function () {
+  loader.classList.add("loaded");
 });
