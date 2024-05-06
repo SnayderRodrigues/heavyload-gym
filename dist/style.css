@@ -166,7 +166,7 @@ h3 span {
 }
 
 h1 {
-  font-size: 5.25rem;
+  font-size: clamp(3.25rem, -1352.75rem + 3200vh, 5.25rem);
 }
 @media (max-width: 87.49875em) {
   h1 {
@@ -225,10 +225,19 @@ h3 {
   justify-content: center;
   position: fixed;
   z-index: 9999;
+  transition: opacity 300ms ease-in-out;
 }
 #preloader span {
-  font-size: clamp(2.75rem, 1.8269230769rem + 4.6153846154vw, 5.25rem);
+  font-size: clamp(2rem, 1.8269230769rem + 4.6153846154vw, 5.25rem);
   font-weight: 700;
+}
+
+#preloader.loaded {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .header {
@@ -457,24 +466,11 @@ h3 {
   }
 }
 
-.back-to-top-wrapper {
-  position: fixed;
-  z-index: 998;
-  display: inline-flex;
-  opacity: 1;
-  inset: 50% 0 auto auto;
-  transform: translateY(-50%);
-  top: 92%;
-  right: 0;
-  height: 0;
-}
-@media (max-width: 47.99875em) {
-  .back-to-top-wrapper {
-    display: none;
-  }
-}
-
 .back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 998;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,7 +479,12 @@ h3 {
   pointer-events: none;
   transition: opacity 200ms linear;
 }
-.back-to-top.opaque {
+@media (max-width: 47.99875em) {
+  .back-to-top {
+    display: none;
+  }
+}
+.back-to-top.visible {
   opacity: 1;
   pointer-events: all;
 }
@@ -827,13 +828,6 @@ h3 {
   .plans__item-div {
     gap: 1rem;
   }
-}
-.plans .promo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
 }
 .plans .check-icon {
   display: block;

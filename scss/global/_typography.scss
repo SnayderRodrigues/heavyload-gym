@@ -21,7 +21,7 @@ h3 {
 }
 
 h1 {
-  font-size: 5.25rem;
+  font-size: clamp(3.25rem, -1352.75rem + 3200vh, 5.25rem);
 
   @include u.breakpoint-down(large) {
     font-size: clamp(
@@ -30,18 +30,6 @@ h1 {
       3.25rem
     );
   }
-  // @include u.breakpoint-down(midlarge) {
-  //   font-size: 5.25rem;
-  // }
-  // @include u.breakpoint-down(medium) {
-  //   font-size: 5.25rem;
-  // }
-  // @include u.breakpoint-down(small) {
-  //   font-size: 5.25rem;
-  // }
-  // @include u.breakpoint-down(xsmall) {
-  //   font-size: 5.25rem;
-  // }
 }
 
 h2 {

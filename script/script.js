@@ -43,37 +43,19 @@ window.addEventListener("resize", function () {
   }
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var menu = document.querySelector(".header");
-//   var top = document.querySelector(".back-to-top");
-//   var origOffsetY = document.querySelector(".hero").offsetHeight - 700;
-
-//   function scroll() {
-//     if (window.scrollY >= origOffsetY) {
-//       menu.classList.add("opaque");
-//       top.classList.add("opaque");
-//     } else {
-//       menu.classList.remove("opaque");
-//       top.classList.remove("opaque");
-//     }
-//   }
-
-//   document.addEventListener("scroll", scroll);
-// });
-
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
-  const top = document.querySelector(".back-to-top");
+  const topButton = document.querySelector(".back-to-top");
   const currentScroll = window.scrollY;
 
   if (currentScroll > lastScrollTop) {
     header.classList.add("opaque");
-    top.classList.add("opaque");
+    topButton.classList.add("visible");
   } else {
     header.classList.remove("opaque");
-    top.classList.remove("opaque");
+    topButton.classList.remove("visible");
   }
   
 });
@@ -97,5 +79,5 @@ function nextImage() {
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function() {
-  loader.style.display = "none";
+  loader.classList.add("loaded")
 });

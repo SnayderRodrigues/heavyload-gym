@@ -1,13 +1,11 @@
 @use 'functions' as f;
 
-//700px, 900px, 1440px
 $breakpoints-up: (
     'medium': f.em(768),
     'large': f.em(900),
     'xlarge': f.em(1440),
 );
 
-//451.98px, 699.98px, 899.98px, 1439.98px
 $breakpoints-down: (
     'xsmall': f.em(425.98),
     'small2': f.em(498.98),

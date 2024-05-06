@@ -9,14 +9,21 @@
   justify-content: center;
   position: fixed;
   z-index: 9999;
+  transition: opacity 300ms ease-in-out;
 
 
   span {
     font-size: clamp(
-      u.rem(44),
+      u.rem(32),
       1.8269230769230769rem + 4.615384615384616vw,
       u.rem(84)
     );
     font-weight: 700;
   }
+}
+
+#preloader.loaded {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
 }
