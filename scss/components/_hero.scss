@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100svh;
   //background-color: var(--bg);
   text-align: center;
   padding: 120px 0;
@@ -13,6 +13,11 @@
   background-position: center 10%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include u.breakpoint-down(small2) {
+    align-items: flex-end;
+    padding: 80px 0;
+  }
 
   &__wrapper {
     display: flex;

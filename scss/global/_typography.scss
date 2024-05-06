@@ -33,11 +33,15 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(
-    u.rem(32),
-    1.2241379310344829rem + 3.3103448275862064vw,
-    u.rem(56)
-  );
+  font-size: clamp(2.75rem, -1352.75rem + 3200vh, 3.5rem);
+
+  @include u.breakpoint-down(large) {
+    font-size: clamp(
+      u.rem(32),
+      1.2241379310344829rem + 3.3103448275862064vw,
+      u.rem(44)
+    );
+  }
 }
 
 h3 {

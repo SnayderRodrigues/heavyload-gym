@@ -14,7 +14,7 @@
     flex-direction: column;
     // align-items: center;
     gap: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 64px;
 
     @include u.breakpoint-down(xsmall) {
       margin-bottom: 40px;
@@ -88,7 +88,7 @@
 
     img {
       margin-bottom: 2rem;
-      max-height: 394px;
+      max-height: 294px;
       border-radius: 0.375rem;
       object-fit: cover;
     }

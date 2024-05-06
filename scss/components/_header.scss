@@ -8,11 +8,11 @@
   background-color: transparent;
   color: var(--white);
   // border-bottom: 4px solid var(--black);
-  padding-block: clamp(0.75rem, -8.714285714285714rem + 28.57142857142857vh, 2rem) 12px;
+  padding-block: clamp(1rem, -8.714285714285714rem + 28.57142857142857vh, 2rem);
   transition: all 200ms linear;
 
   &.opaque {
-    padding-block: 12px 12px;
+    padding-block: 12px;
     background-color: rgba(18, 18, 18, 0.7);
   }
   &.opaque:hover {

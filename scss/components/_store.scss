@@ -12,7 +12,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 4rem;
+    
+    @include u.breakpoint-down(xsmall) {
+      gap: 2rem;
+  }
   }
   &__title-wrapper {
     display: flex;
@@ -22,10 +26,10 @@
   }
   &__card {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: right;
     width: 100%;
-    height: 700px;
+    height: 496px;
     // background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
     // background-position: center;
     // background-repeat: no-repeat;
@@ -99,7 +103,7 @@
     z-index: 0;
     margin: 0 auto;
     width: 100%;
-    height: 700px;
+    height: 496px;
     overflow: hidden;
 
     @include u.breakpoint-down(large) {
@@ -114,7 +118,7 @@
   }
   &__slides-div {
     width: 100%;
-    height: 700px;
+    height: 496px;
     display: flex;
 
     @include u.breakpoint-down(large) {
@@ -157,9 +161,9 @@
   // }
   .first {
     width: 100%;
-    height: 700px;
+    height: 496px;
     background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -100%;
@@ -177,9 +181,9 @@
   }
   .second {
     width: 100%;
-    height: 700px;
+    height: 496px;
     background-image: url(/assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: -100%;
