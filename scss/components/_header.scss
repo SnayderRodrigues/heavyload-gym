@@ -8,7 +8,7 @@
   background-color: transparent;
   color: var(--white);
   // border-bottom: 4px solid var(--black);
-  padding-block: 32px 12px;
+  padding-block: clamp(0.75rem, -8.714285714285714rem + 28.57142857142857vh, 2rem) 12px;
   transition: all 200ms linear;
 
   &.opaque {
@@ -116,7 +116,7 @@
     }
   }
   &__button {
-    padding: 12px 16px;
+    padding: 12px clamp(0.75rem, -1.1428571428571428rem + 5.714285714285714vh, 1rem);
 
     @include u.breakpoint-down(small2) {
       display: none;

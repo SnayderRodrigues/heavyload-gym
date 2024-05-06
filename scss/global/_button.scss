@@ -32,6 +32,8 @@
   }
 
   @include u.breakpoint-up(large) {
-    padding: 16px 30px 16px;
+    padding: clamp(0.75rem, -1.1428571428571428rem + 5.714285714285714vh, 1rem)
+      clamp(1.5rem, -2.2857142857142856rem + 11.428571428571429vh, 2rem)
+      clamp(0.75rem, -1.1428571428571428rem + 5.714285714285714vh, 1rem);
   }
 }

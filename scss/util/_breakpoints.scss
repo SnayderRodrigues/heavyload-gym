@@ -14,7 +14,7 @@ $breakpoints-down: (
     'small': f.em(767.98),
     'medium': f.em(899.98),
     'midlarge': f.em(1119.98),
-    'large': f.em(1439.98),
+    'large': f.em(1399.98),
 );
 
 @mixin breakpoint-up($size) {

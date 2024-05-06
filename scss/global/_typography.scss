@@ -21,12 +21,27 @@ h3 {
 }
 
 h1 {
-  // font-size: clamp(
-  //   u.rem(44),
-  //   1.8269230769230769rem + 4.615384615384616vw,
-  //   u.rem(84)
-  // );
-  font-size: clamp(2.75rem, 2.25rem + 2.5vw, 5.25rem);
+  font-size: 5.25rem;
+
+  @include u.breakpoint-down(large) {
+    font-size: clamp(
+      2.75rem,
+      2.6017145505097314rem + 0.7414272474513438vw,
+      3.25rem
+    );
+  }
+  // @include u.breakpoint-down(midlarge) {
+  //   font-size: 5.25rem;
+  // }
+  // @include u.breakpoint-down(medium) {
+  //   font-size: 5.25rem;
+  // }
+  // @include u.breakpoint-down(small) {
+  //   font-size: 5.25rem;
+  // }
+  // @include u.breakpoint-down(xsmall) {
+  //   font-size: 5.25rem;
+  // }
 }
 
 h2 {
