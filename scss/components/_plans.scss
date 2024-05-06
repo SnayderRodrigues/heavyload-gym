@@ -95,11 +95,17 @@
   &__item-div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 
     @include u.breakpoint-down(xsmall) {
       gap: 1rem;
     }
+  }
+  &__item-title {
+    width: fit-content;
+    padding-bottom: 4px;
+    border-bottom: 4px solid var(--red);
   }
   .check-icon {
     display: block;

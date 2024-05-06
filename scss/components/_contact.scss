@@ -10,42 +10,37 @@
     padding: 80px 0;
   }
 
+  &__headline {
+    margin-bottom: 2.5rem;
+  }
   &__wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    // border: 4px solid red;
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-      gap: 2rem;
-    }
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+
     @include u.breakpoint-down(midlarge) {
+      display: flex;
       flex-direction: column;
-      gap: 2rem;
     }
   }
   &__cards {
+    grid-area: 1 / 1 / 2 / 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
-
-    @include u.breakpoint-down(midlarge) {
-      width: 100%;
-    }
+    gap: 2rem;
   }
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: 1rem;
     width: 100%;
     background-color: var(--bg);
     color: var(--white);
-    padding: 60px;
+    padding: 48px;
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
-    margin-bottom: 1rem;
 
     @include u.breakpoint-down(midlarge) {
       justify-content: start;
@@ -62,36 +57,11 @@
     display: flex;
     flex-direction: column;
   }
-  &__form-h2 {
-    font-size: u.rem(42);
-    margin-bottom: 2rem;
-  }
   &__form-items-title {
     font-size: u.rem(16);
     line-height: 1.3;
     margin-bottom: 0.5rem;
   }
-  &__button-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    // margin-bottom: 1.5rem;
-  }
-  &__button {
-    width: 100%;
-    text-align: center;
-    padding: 16px 30px 16px;
-
-    &:hover {
-      background-color: var(--black);
-    }
-  }
-  // &__form-submit-text {
-  //     font-size: u.rem(16);
-  //     line-height: 1.3;
-  // }
   .form-control {
     margin-bottom: 1rem;
     width: 100%;
@@ -99,7 +69,6 @@
     padding-bottom: 0.3125rem;
     font-family: "Roboto", sans-serif;
     font-size: u.rem(18);
-    // line-height: 1;
     background-color: var(--black);
     padding: 12px 8px;
     border: 0;
@@ -108,18 +77,34 @@
   }
   .message {
     resize: vertical;
-    min-height: 6rem;
     color: var(--white);
+    min-height: 6rem;
+    margin-bottom: 2rem;
+  }
+  &__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  &__button {
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--black);
+    }
   }
   &__whatsapp {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: 1rem;
+    gap: 2rem;
     width: 100%;
     background-color: var(--bg);
     color: var(--white);
-    padding: 60px;
+    padding: 48px;
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 
@@ -133,12 +118,7 @@
     @include u.breakpoint-down(xsmall) {
     }
   }
-  &__whatsapp {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .whatsapp-headline {
+  &__whatsapp-headline {
     display: flex;
   }
   .check-icon {
@@ -152,7 +132,7 @@
     margin-bottom: 6px;
     transform: rotate(45deg);
   }
-  .whatsapp-button {
+  &__whatsapp-button {
     background-color: var(--green);
 
     &:hover {
@@ -160,29 +140,16 @@
     }
   }
   &__image-wrapper {
-    width: 60%;
-    background-color: var(--black);
-    color: var(--white);
+    grid-area: 1 / 5 / 2 / 11;
+    background-image: url(../../assets/images/aaron-brogden-9y4MaTz2Js0-unsplash.webp);
+    background-size: cover;
+    background-position: 30%;
+    border-radius: 1.125rem;
 
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: center;
-
-    @include u.breakpoint-down(small) {
-      width: 100%;
-      justify-content: start;
-    }
     @include u.breakpoint-down(midlarge) {
       width: 100%;
-      justify-content: start;
-    }
-
-    img {
-      height: 100%;
-      max-height: 1025.56px;
-      border-radius: 1.125rem;
-      object-fit: cover;
+      height: clamp(25rem, 19.993742177722154rem + 25.03128911138924vw, 37.5rem);
+      background-position: left 40%;
     }
   }
 }
