@@ -16,9 +16,9 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: clamp(
-    u.rem(16),
-    0.9353448275862069rem + 0.27586206896551724vw,
-    u.rem(18)
+    1rem,
+    0.9166666666666666rem + 0.1736111111111111vw,
+    1.125rem
   );
   line-height: 1.78;
   overflow-x: hidden;
@@ -122,8 +122,11 @@ textarea:focus-visible {
 
 .wrapper {
   // outline: 2px solid red;
-  width: min(100% - u.rem(64), u.rem(1400));
+  width: min(100% - u.rem(96), u.rem(1400));
   margin-inline: auto;
+  @include u.breakpoint-down(medium) {
+    width: min(100% - u.rem(64), u.rem(1400));
+  }
   @include u.breakpoint-down(small) {
     width: min(100% - u.rem(32), u.rem(1400));
   }

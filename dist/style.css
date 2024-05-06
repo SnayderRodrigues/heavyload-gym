@@ -13,7 +13,7 @@ body {
   background-color: var(--bg);
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
+  font-size: clamp(1rem, 0.9166666667rem + 0.1736111111vw, 1.125rem);
   line-height: 1.78;
   overflow-x: hidden;
   color: var(--white);
@@ -110,8 +110,13 @@ textarea:focus-visible {
 }
 
 .wrapper {
-  width: min(100% - 4rem, 87.5rem);
+  width: min(100% - 6rem, 87.5rem);
   margin-inline: auto;
+}
+@media (max-width: 56.24875em) {
+  .wrapper {
+    width: min(100% - 4rem, 87.5rem);
+  }
 }
 @media (max-width: 47.99875em) {
   .wrapper {
@@ -161,7 +166,7 @@ h3 span {
 }
 
 h1 {
-  font-size: clamp(2.75rem, 1.8269230769rem + 4.6153846154vw, 5.25rem);
+  font-size: clamp(2.75rem, 2.25rem + 2.5vw, 5.25rem);
 }
 
 h2 {
@@ -254,7 +259,7 @@ h3 {
 .header__logo {
   color: var(--white);
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, -1.15rem + 8vh, 2rem);
   font-weight: bold;
   position: relative;
   z-index: 1000;
@@ -430,8 +435,6 @@ h3 {
   margin-inline: auto;
 }
 .hero__headline-description {
-  font-size: clamp(1.125rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
-  font-weight: 400;
   margin-inline: auto;
 }
 .hero__button-wrapper {
