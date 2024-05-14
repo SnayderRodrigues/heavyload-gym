@@ -144,6 +144,7 @@
     background-size: cover;
     background-position: 30%;
     border-radius: 1.125rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 
     @include u.breakpoint-down(midlarge) {
       width: 100%;

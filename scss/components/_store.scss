@@ -30,20 +30,12 @@
     justify-content: right;
     width: 100%;
     height: 496px;
-    // background-image: url(/assets/images/anastase-maragos-HyvE5SiKMUs-unsplash.webp);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    padding: 3rem;
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 1.125rem;
     position: relative;
     overflow: hidden;
     
-    @include u.breakpoint-down(large) {
-      height: 600px;
-    }
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       height: 500px;
     }
     @include u.breakpoint-down(small2) {
@@ -58,13 +50,13 @@
     color: var(--black);
     width: 400px;
     background-color: var(--white);
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.35);
     position: relative;
     z-index: 1;
     
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       display: none;
       padding: 2rem;
     }
@@ -82,11 +74,11 @@
     color: var(--black);
     width: 100%;
     background-color: var(--white);
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
     
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       display: flex;
       padding: 2rem;
     }
@@ -106,10 +98,7 @@
     height: 496px;
     overflow: hidden;
 
-    @include u.breakpoint-down(large) {
-      height: 600px;
-    }
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       height: 500px;
     }
     @include u.breakpoint-down(small2) {
@@ -121,10 +110,7 @@
     height: 496px;
     display: flex;
 
-    @include u.breakpoint-down(large) {
-      height: 600px;
-    }
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       height: 500px;
     }
     @include u.breakpoint-down(small2) {
@@ -139,26 +125,6 @@
     position: relative;
     transition: 700ms ease-out;
   }
-  // .manual-navigation {
-  //   position: absolute;
-  //   width: 100%;
-  //   margin-top: -40px;
-  //   display: flex;
-  //   justify-content: center;
-  // }
-  // .manual-btn {
-  //   border: 2px solid #fff;
-  //   padding: 5px;
-  //   border-radius: 10px;
-  //   cursor: pointer;
-  //   transition: 300ms linear;
-  // }
-  // .manual-btn:not(:last-child) {
-  //   margin-right: 40px;
-  // }
-  // .manual-btn:hover {
-  //   background-color: #fff;
-  // }
   .first {
     width: 100%;
     height: 496px;
@@ -168,10 +134,7 @@
     background-size: cover;
     margin-left: -100%;
 
-    @include u.breakpoint-down(large) {
-      height: 600px;
-    }
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       height: 500px;
     }
     @include u.breakpoint-down(small2) {
@@ -188,10 +151,7 @@
     background-size: cover;
     margin-right: -100%;
 
-    @include u.breakpoint-down(large) {
-      height: 600px;
-    }
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(midlarge) {
       height: 500px;
     }
     @include u.breakpoint-down(small2) {
@@ -208,34 +168,4 @@
   #radio-2:checked ~ .second {
     margin-right: 0;
   }
-  // .navigation-auto div {
-  //   border: 2px solid #fff;
-  //   padding: 5px;
-  //   border-radius: 10px;
-  //   cursor: pointer;
-  //   transition: 300ms linear;
-  // }
-  // .navigation-auto {
-  //   position: absolute;
-  //   width: 100%;
-  //   margin-top: 760px;
-  //   display: flex;
-  //   justify-content: center;
-
-  //   @include u.breakpoint-down(small) {
-  //     margin-top: 560px;
-  //   }
-  //   @include u.breakpoint-down(small2) {
-  //     margin-top: 360px;
-  //   }
-  // }
-  // .navigation-auto div:not(:last-child) {
-  //   margin-right: 40px;
-  // }
-  // #radio-1:checked ~ .navigation-auto .auto-btn1 {
-  //   background-color: #fff;
-  // }
-  // #radio-2:checked ~ .navigation-auto .auto-btn2 {
-  //   background-color: #fff;
-  // }
 }
