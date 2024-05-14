@@ -3,25 +3,17 @@
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
 
   span {
-    // display: inline-block;
     color: var(--red);
-    // &::after {
-    //     content: '';
-    //     height: 2px;
-    //     display: block;
-    //     background-color: var(--green);
-    // }
   }
 }
 
 h1 {
-  font-size: clamp(3.25rem, -1352.75rem + 3200vh, 5.25rem);
+  font-size: clamp(3.25rem, -1352.75rem + 3200vh, 4.25rem);
 
   @include u.breakpoint-down(large) {
     font-size: clamp(

@@ -34,8 +34,7 @@
   }
   &__logo {
     color: var(--white);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: clamp(1.5rem, -1.15rem + 8vh, 2rem);
+    font-size: clamp(1.25rem, -1.15rem + 8vh, 1.75rem);
     font-weight: bold;
     position: relative;
     z-index: 1000;
@@ -178,7 +177,3 @@
     }
   }
 }
-
-// .active {
-//     color: var(--green)!important;
-// }

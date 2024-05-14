@@ -8,13 +8,12 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--bg);
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: clamp(
     1rem,
     0.9166666666666666rem + 0.1736111111111111vw,
@@ -107,7 +106,6 @@ textarea {
 }
 
 option {
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
   display: block;
   min-height: 1.2em;
