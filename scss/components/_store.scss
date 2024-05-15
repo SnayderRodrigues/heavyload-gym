@@ -82,6 +82,9 @@
       display: flex;
       padding: 2rem;
     }
+    @include u.breakpoint-down(xsmall) {
+      padding: 1.5rem;
+    }
     
     h3,
     p {

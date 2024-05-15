@@ -62,21 +62,24 @@ window.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".about__description-button");
   const button2 = document.querySelector(".about__description-button-2");
-  const descriptionWrappers = document.querySelectorAll(
-    ".about__description-wrapper"
+  const descriptionVisible = document.querySelector(".about__visible-description");
+  const descriptionHidden = document.querySelectorAll(
+    ".about__hidden-description"
   );
 
   button.addEventListener("click", function () {
-    descriptionWrappers.forEach(function (wrapper) {
-      wrapper.classList.add("open");
-      button.style.display = "none";
+    descriptionHidden.forEach(function (wrapper) {
+      wrapper.classList.add("openned");
     });
+    button.classList.add("openned");
+    descriptionVisible.classList.add("openned");
   });
   button2.addEventListener("click", function () {
-    descriptionWrappers.forEach(function (wrapper) {
-      wrapper.classList.remove("open");
-      button.style.display = "block";
+    descriptionHidden.forEach(function (wrapper) {
+      wrapper.classList.remove("openned");
     });
+    button.classList.remove("openned");
+    descriptionVisible.classList.remove("openned");
   });
 });
 

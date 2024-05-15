@@ -59,12 +59,12 @@
       color: var(--red);
     }
   }
-  &__links {
+  &__social-links {
     display: flex;
     // align-items: center;
     gap: 28px;
   }
-  &__link {
+  &__social-link {
     path {
       fill: var(--white);
     }
@@ -151,16 +151,25 @@
       font-size: 1.5rem;
       margin-bottom: 0.75rem;
     }
-    a {
-      justify-content: flex-start;
-      color: var(--white);
-    }
     .link-text-2 {
       color: var(--red);
+    }
+    p {
+      @include u.breakpoint-down(small) {
+        margin-bottom: 0.5rem;
+      }
     }
 
     @include u.breakpoint-down(small2) {
       align-items: center;
+    }
+  }
+  &__navigation-link {
+    justify-content: flex-start;
+    color: var(--white);
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: 0.5rem;
     }
   }
   &__below {
