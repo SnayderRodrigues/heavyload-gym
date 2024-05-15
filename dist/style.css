@@ -12,7 +12,7 @@ body {
   background-color: var(--bg);
   margin: 0;
   font-family: system-ui, sans-serif;
-  font-size: clamp(1rem, 0.9166666667rem + 0.1736111111vw, 1.125rem);
+  font-size: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
   line-height: 1.78;
   overflow-x: hidden;
   color: var(--white);
@@ -484,6 +484,7 @@ h3 {
   margin-inline: auto;
 }
 .hero__headline-description {
+  font-size: clamp(1rem, 0.6962025316rem + 0.6329113924vw, 1.25rem);
   margin-inline: auto;
 }
 .hero__button-wrapper {
