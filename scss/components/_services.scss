@@ -52,6 +52,11 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
 
+    @include u.breakpoint-down(medium) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -65,16 +70,32 @@
   }
   &__image-1 {
     grid-area: 1 / 1 / 2 / 5;
+
+    @include u.breakpoint-down(medium) {
+      display: none;
+    }
   }
   &__image-2 {
     grid-area: 1 / 5 / 2 / 13;
     object-position: center top;
+
+    @include u.breakpoint-down(medium) {
+      grid-area: 1 / 1 / 2 / 2;
+    }
   }
   &__image-3 {
     grid-area: 2 / 1 / 3 / 9;
+
+    @include u.breakpoint-down(medium) {
+      display: none;
+    }
   }
   &__image-4 {
     grid-area: 2 / 9 / 3 / 13;
+
+    @include u.breakpoint-down(medium) {
+      display: none;
+    }
   }
   &__cards-wrapper {
     display: grid;
@@ -83,6 +104,9 @@
 
     @include u.breakpoint-down(midlarge) {
       grid-template-columns: repeat(1, 1fr);
+    }
+    @include u.breakpoint-down(small) {
+      grid-gap: 1rem;
     }
   }
   &__card {
