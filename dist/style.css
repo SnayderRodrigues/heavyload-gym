@@ -834,8 +834,11 @@ h3 {
   padding: 2rem;
   border: 4px solid var(--red);
   border-radius: 1.125rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
   transition: border 200ms ease-in-out;
+  position: relative;
 }
 @media (max-width: 26.62375em) {
   .plans__item {
@@ -857,10 +860,34 @@ h3 {
   text-align: left;
   margin-bottom: 1rem;
 }
+@media (max-width: 63.99875em) {
+  .plans__item:last-of-type {
+    margin-top: 3rem;
+  }
+}
+.plans__item:last-of-type:after {
+  content: "Mais Popular";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -3rem;
+  width: calc(100% + 8px);
+  height: 3rem;
+  background-color: var(--red);
+  border: 4px solid var(--red);
+  border-radius: 1.125rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .plans__item:not(:last-child) {
   color: var(--white);
   background-color: var(--black);
   border: 4px solid transparent;
+  border-radius: 1.125rem;
 }
 .plans__item-div {
   display: flex;
