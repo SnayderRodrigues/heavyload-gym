@@ -576,6 +576,7 @@ h3 {
 .about__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .about__headline {
   margin-bottom: 2.5rem;
@@ -587,6 +588,7 @@ h3 {
 }
 .about__visible-description {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
   transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
