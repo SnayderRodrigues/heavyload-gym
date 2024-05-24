@@ -156,6 +156,7 @@ textarea:focus-visible {
   --dark-gray: #505050;
   --black: #2b2b2b;
   --bg: #121212;
+  --amoled: #000000;
 }
 
 h1,
@@ -757,7 +758,6 @@ h3 {
   border-radius: 1.125rem;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 }
 .services__image-1 {
@@ -819,6 +819,15 @@ h3 {
   color: var(--white);
   border-radius: 1.125rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  transition: background-color 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.services__card:hover {
+  background-color: var(--amoled);
+}
+@media (max-width: 47.99875em) {
+  .services__card:hover {
+    background-color: var(--bg);
+  }
 }
 .services__title-div {
   display: flex;

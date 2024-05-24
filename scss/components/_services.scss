@@ -64,7 +64,6 @@
       max-height: 394px;
       border-radius: 1.125rem;
       object-fit: cover;
-      filter: grayscale(100%);
       box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
     }
   }
@@ -118,6 +117,17 @@
     color: var(--white);
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+    transition: background-color 500ms cubic-bezier(0.23, 1, 0.32, 1);
+
+    &:hover {
+      background-color: var(--amoled);
+    }
+
+    @include u.breakpoint-down(small) {
+      &:hover {
+      background-color: var(--bg);
+    }
+    }
   }
   &__title-div {
     display: flex;
@@ -203,9 +213,6 @@
       }
     }
   }
-  // &__title-div.active {
-  //   margin-bottom: 2rem;
-  // }
   &__title-div.active + &__text {
     grid-template-rows: 1fr;
   }
