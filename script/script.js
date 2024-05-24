@@ -83,6 +83,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const title = document.querySelectorAll(".services__title-div");
+
+title.forEach((titleOpenner) => {
+  titleOpenner.addEventListener("click", () => {
+    title.forEach((item) => {
+      if (item !== titleOpenner) {
+        item.classList.remove("active");
+      }
+    });
+
+    titleOpenner.classList.toggle("active");
+  });
+});
+
 let count = 1;
 
 document.getElementById("radio-1").checked = true;
