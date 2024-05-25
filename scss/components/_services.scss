@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .services {
-  background-color: var(--black);
+  background-color: var(--bg);
   width: 100%;
   padding: 120px 0;
 
@@ -113,7 +113,7 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    background-color: var(--bg);
+    background-color: var(--black);
     color: var(--white);
     border-radius: 1.125rem;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
@@ -160,7 +160,7 @@
     flex-shrink: 0;
     background-color: transparent;
     padding: 1rem 1.75rem;
-    border: 2px solid var(--black);
+    border: 2px solid var(--dark-gray);
     border-radius: 999px;
     transition: all 200ms linear;
     position: relative;

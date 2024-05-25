@@ -560,7 +560,6 @@ h3 {
   padding: 120px 0 120px 0;
   background-color: var(--bg);
   border-top: 8px solid var(--red);
-  border-bottom: 8px solid var(--red);
   color: var(--white);
   position: relative;
 }
@@ -691,7 +690,7 @@ h3 {
 }
 
 .services {
-  background-color: var(--black);
+  background-color: var(--bg);
   width: 100%;
   padding: 120px 0;
 }
@@ -815,7 +814,7 @@ h3 {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: var(--bg);
+  background-color: var(--black);
   color: var(--white);
   border-radius: 1.125rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
@@ -859,7 +858,7 @@ h3 {
   flex-shrink: 0;
   background-color: transparent;
   padding: 1rem 1.75rem;
-  border: 2px solid var(--black);
+  border: 2px solid var(--dark-gray);
   border-radius: 999px;
   transition: all 200ms linear;
   position: relative;
@@ -923,11 +922,8 @@ h3 {
 }
 
 .plans {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--bg);
   padding: 120px 0;
-  border-top: 8px solid var(--red);
-  border-bottom: 8px solid var(--red);
 }
 @media (max-width: 47.99875em) {
   .plans {

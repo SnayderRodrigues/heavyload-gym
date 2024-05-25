@@ -1,11 +1,8 @@
 @use "../util/" as u;
 
 .plans {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--bg);
   padding: 120px 0;
-  border-top: 8px solid var(--red);
-  border-bottom: 8px solid var(--red);
 
   @include u.breakpoint-down(small) {
     padding: 120px 0;
