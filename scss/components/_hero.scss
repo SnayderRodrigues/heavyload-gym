@@ -2,6 +2,7 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100svh;
@@ -59,13 +60,42 @@
     // flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
     width: fit-content;
+    margin-bottom: 2rem;
     position: relative;
 
-    @media (width < 500px) {
+    @include u.breakpoint-down(small2) {
       flex-direction: column;
+    }
+  }
+  &__highlights-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: clamp(2rem, -13.142857142857142rem + 45.714285714285715vh, 4rem);
+
+    @include u.breakpoint-down(small) {
+      display: none;
+    }
+
+    div{
+      display: flex;
+      align-items: center;
       gap: 1rem;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+
+      span {
+        flex-shrink: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: var(--red);
+        border-radius: 50%;
+      }
     }
   }
 }
