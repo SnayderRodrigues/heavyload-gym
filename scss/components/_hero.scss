@@ -6,11 +6,10 @@
   justify-content: center;
   height: 100svh;
   //background-color: var(--bg);
-  text-align: center;
   padding: 120px 0;
   position: relative;
   background-image: url(/assets/images/gym-bg-darken.webp);
-  background-position: center 10%;
+  background-position: center 35%;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -22,7 +21,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     z-index: 2;
   }
@@ -34,6 +33,13 @@
       -6.071428571428571rem + 22.857142857142858vh,
       2.5rem
     );
+
+    p:first-of-type {
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
   }
   &__headline {
     // color: var(--color-white);
@@ -43,8 +49,7 @@
       -6.071428571428571rem + 22.857142857142858vh,
       2.5rem
     );
-    max-width: 22ch;
-    margin-inline: auto;
+    max-width: 18ch;
   }
   &__headline-description {
     font-size: clamp(
@@ -52,7 +57,7 @@
       0.6962025316455696rem + 0.6329113924050633vw,
       1.25rem
     );
-    margin-inline: auto;
+    max-width: 48ch;
   }
   &__button-wrapper {
     display: flex;

@@ -455,11 +455,10 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 100svh;
-  text-align: center;
   padding: 120px 0;
   position: relative;
   background-image: url(/assets/images/gym-bg-darken.webp);
-  background-position: center 10%;
+  background-position: center 35%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -472,7 +471,7 @@ h3 {
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   z-index: 2;
 }
@@ -481,15 +480,20 @@ h3 {
   max-width: 850px;
   margin-bottom: clamp(1.5rem, -6.0714285714rem + 22.8571428571vh, 2.5rem);
 }
+.hero__headline-wrapper p:first-of-type {
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
 .hero__headline {
   letter-spacing: -2px;
   margin-bottom: clamp(1.5rem, -6.0714285714rem + 22.8571428571vh, 2.5rem);
-  max-width: 22ch;
-  margin-inline: auto;
+  max-width: 18ch;
 }
 .hero__headline-description {
   font-size: clamp(1rem, 0.6962025316rem + 0.6329113924vw, 1.25rem);
-  margin-inline: auto;
+  max-width: 48ch;
 }
 .hero__button-wrapper {
   display: flex;
