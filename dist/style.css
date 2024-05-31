@@ -149,7 +149,7 @@ textarea:focus-visible {
 
 :root {
   --yellow: #fff7e5;
-  --red: #d50000;
+  --red: #fd1616;
   --green: #25d366;
   --white: #ffffff;
   --gray: #f3f3f3;
@@ -455,12 +455,9 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 100svh;
+  background-color: transparent;
   padding: 120px 0;
   position: relative;
-  background-image: url(/assets/images/gym-bg-darken.webp);
-  background-position: center 35%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 @media (max-width: 31.24875em) {
   .hero {
@@ -559,6 +556,21 @@ h3 {
   margin-top: 16px;
   transform: rotate(45deg);
   transition: all 200ms linear;
+}
+
+.hero::after {
+  content: "";
+  background-image: url(/assets/images/anastase-maragos-7kEpUPB8vNk-unsplash.webp);
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(30%) saturate(110%);
+  z-index: -1;
 }
 
 .about {

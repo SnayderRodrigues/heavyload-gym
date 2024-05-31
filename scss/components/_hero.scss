@@ -5,13 +5,9 @@
   align-items: center;
   justify-content: center;
   height: 100svh;
-  //background-color: var(--bg);
+  background-color: transparent;
   padding: 120px 0;
   position: relative;
-  background-image: url(/assets/images/gym-bg-darken.webp);
-  background-position: center 35%;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @include u.breakpoint-down(small2) {
     align-items: flex-end;
@@ -42,7 +38,6 @@
     }
   }
   &__headline {
-    // color: var(--color-white);
     letter-spacing: -2px;
     margin-bottom: clamp(
       1.5rem,
@@ -125,4 +120,19 @@
     transform: rotate(45deg);
     transition: all 200ms linear;
   }
+}
+
+.hero::after {
+  content: "";
+  background-image: url(/assets/images/anastase-maragos-7kEpUPB8vNk-unsplash.webp);
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(30%) saturate(110%);
+  z-index: -1;
 }
