@@ -125,7 +125,7 @@
 
     @include u.breakpoint-down(small) {
       &:hover {
-      background-color: var(--bg);
+      background-color: var(--black);
     }
     }
   }

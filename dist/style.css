@@ -871,7 +871,7 @@ h3 {
 }
 @media (max-width: 47.99875em) {
   .services__card:hover {
-    background-color: var(--bg);
+    background-color: var(--black);
   }
 }
 .services__title-div {
