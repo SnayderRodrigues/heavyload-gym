@@ -90,10 +90,6 @@
   &__button {
     width: 100%;
     text-align: center;
-
-    &:hover {
-      background-color: var(--black);
-    }
   }
   &__whatsapp {
     display: flex;
@@ -134,10 +130,6 @@
   }
   &__whatsapp-button {
     background-color: var(--green);
-
-    &:hover {
-      background-color: var(--black);
-    }
   }
   &__image-wrapper {
     grid-area: 1 / 5 / 2 / 11;

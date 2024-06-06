@@ -212,7 +212,7 @@ h3 {
 .button:hover {
   cursor: pointer;
   color: var(--white);
-  background-color: var(--bg);
+  background-color: var(--black);
 }
 @media (max-width: 47.99875em) {
   .button {
@@ -572,9 +572,6 @@ h3 {
   justify-content: center;
   padding: 4px 12px 4px;
 }
-.back-to-top__button:hover {
-  background-color: var(--red);
-}
 .back-to-top__scroll-up-icon {
   width: 16px;
   height: 16px;
@@ -694,9 +691,6 @@ h3 {
 .about__description-button, .about__description-button-2 {
   width: -moz-fit-content;
   width: fit-content;
-}
-.about__description-button:hover, .about__description-button-2:hover {
-  background-color: var(--black);
 }
 .about__description-button-2 {
   background-color: var(--black);
@@ -1106,6 +1100,9 @@ h3 {
   transform: rotate(45deg);
   flex-shrink: 0;
 }
+.plans__button:hover {
+  background-color: var(--bg);
+}
 
 .store {
   padding: 120px 0;
@@ -1395,9 +1392,6 @@ h3 {
   width: 100%;
   text-align: center;
 }
-.contact__button:hover {
-  background-color: var(--black);
-}
 .contact__whatsapp {
   display: flex;
   flex-direction: column;
@@ -1442,9 +1436,6 @@ h3 {
 }
 .contact__whatsapp-button {
   background-color: var(--green);
-}
-.contact__whatsapp-button:hover {
-  background-color: var(--black);
 }
 .contact__image-wrapper {
   grid-area: 1/5/2/11;

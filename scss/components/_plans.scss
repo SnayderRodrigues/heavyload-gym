@@ -133,4 +133,7 @@
     transform: rotate(45deg);
     flex-shrink: 0;
   }
+  &__button:hover {
+    background-color: var(--bg);
+  }
 }

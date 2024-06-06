@@ -19,7 +19,7 @@
     cursor: pointer;
     // border: 2px solid var(--black);
     color: var(--white);
-    background-color: var(--bg);
+    background-color: var(--black);
   }
 
   @include u.breakpoint-down(small) {
