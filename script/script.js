@@ -114,12 +114,7 @@ function nextImage() {
 }
 
 var loader = document.getElementById("preloader");
-var storeLoader = document.getElementById("storePreloader");
 
 window.addEventListener("load", function () {
   loader.classList.add("loaded");
-});
-
-window.addEventListener("load", function () {
-  storeLoader.classList.add("loaded");
 });
