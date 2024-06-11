@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100svh;
+  // justify-content: center;
+  // min-height: 100svh;
   background-color: transparent;
-  padding: 120px 0;
+  padding: 120px 0 0 0;
 
   &__wrapper {
     display: flex;
