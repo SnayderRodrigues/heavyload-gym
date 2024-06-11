@@ -1,0 +1,17 @@
+@use "../util/" as u;
+
+.storeHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  background-color: transparent;
+  padding: 120px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

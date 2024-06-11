@@ -1902,4 +1902,19 @@ h3 {
 }
 .storeHeader__search-button-icon svg path {
   fill: var(--white);
+}
+
+.storeHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  background-color: transparent;
+  padding: 120px 0;
+}
+.storeHero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
