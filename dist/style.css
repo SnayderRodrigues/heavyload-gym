@@ -1752,12 +1752,6 @@ h3 {
 .storeHeader__navbar {
   display: flex;
   align-items: center;
-  gap: 24px;
-}
-@media (min-width: 48em) {
-  .storeHeader__navbar {
-    gap: 0;
-  }
 }
 .storeHeader__list-div {
   display: flex;
@@ -1881,4 +1875,31 @@ h3 {
   .storeHeader .link-hidden {
     display: flex;
   }
+}
+.storeHeader__search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.storeHeader__search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--black);
+  padding: 12px clamp(0.75rem, -1.1428571429rem + 5.7142857143vh, 1rem);
+  border-radius: 999px;
+  margin: 0;
+}
+.storeHeader__search-button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+.storeHeader__search-button-icon:hover {
+  background-color: var(--dark-gray);
+}
+.storeHeader__search-button-icon svg path {
+  fill: var(--white);
 }/*# sourceMappingURL=style.css.map */

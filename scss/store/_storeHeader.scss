@@ -46,11 +46,6 @@
   &__navbar {
     display: flex;
     align-items: center;
-    gap: 24px;
-
-    @include u.breakpoint-up(medium) {
-      gap: 0;
-    }
   }
   &__list-div {
     display: flex;
@@ -174,6 +169,39 @@
 
     @include u.breakpoint-down(medium) {
       display: flex;
+    }
+  }
+  &__search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--black);
+    padding: 12px clamp(0.75rem, -1.1428571428571428rem + 5.714285714285714vh, 1rem);
+    border-radius: 999px;
+    margin: 0;
+  }
+  // &__searchbar {
+  // }
+  &__search-button-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--white);
+    padding: 0.25rem;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: var(--dark-gray);
+    }
+
+    svg {
+      path {
+        fill: var(--white);
+      }
     }
   }
 }
