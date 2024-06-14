@@ -1,0 +1,49 @@
+@use "../util/" as u;
+
+.storeCta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 64px 0 120px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__headline {
+    margin-bottom: 4rem;
+  }
+  &__image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+  }
+  &__image {
+    height: 400px;
+    background-color: var(--black);
+    border-radius: 1.125rem;
+  }
+  &__image:nth-of-type(1) {
+    grid-area: 1 / 1 / 2 / 7;
+  }
+  &__image:nth-of-type(2) {
+    grid-area: 1 / 7 / 2 / 9;
+  }
+  &__image:nth-of-type(3) {
+    grid-area: 1 / 9 / 2 / 11;
+  }
+  &__image:nth-of-type(4) {
+    grid-area: 1 / 11 / 2 / 13;
+  }
+  &__support-text {
+    max-width: 64ch;
+    margin-bottom: 2rem;
+  }
+  &__button {
+    width: fit-content;
+  }
+}

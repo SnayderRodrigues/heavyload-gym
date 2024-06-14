@@ -2016,7 +2016,7 @@ h3 {
   flex-shrink: 0;
   width: 3rem;
   height: 3rem;
-  background-color: #fff;
+  background-color: var(--black);
   border-radius: 0.625rem;
 }
 .storeHero__slider-item-text {
@@ -2053,6 +2053,7 @@ h3 {
   padding: 2rem;
   border-radius: 1.125rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .storeArrivals {
@@ -2259,12 +2260,63 @@ h3 {
   align-items: center;
   gap: 1rem;
 }
+.storeSports__item > * {
+  cursor: pointer;
+}
 .storeSports__item-image {
   width: 100%;
-  height: 200px;
-  background-color: #fff;
+  aspect-ratio: 1/1;
+  background-color: var(--black);
   border-radius: 50%;
 }
 .storeSports__item-title {
   font-weight: 600;
+}
+
+.storeCta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 64px 0 120px 0;
+}
+.storeCta__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.storeCta__headline {
+  margin-bottom: 4rem;
+}
+.storeCta__image-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+.storeCta__image {
+  height: 400px;
+  background-color: var(--black);
+  border-radius: 1.125rem;
+}
+.storeCta__image:nth-of-type(1) {
+  grid-area: 1/1/2/7;
+}
+.storeCta__image:nth-of-type(2) {
+  grid-area: 1/7/2/9;
+}
+.storeCta__image:nth-of-type(3) {
+  grid-area: 1/9/2/11;
+}
+.storeCta__image:nth-of-type(4) {
+  grid-area: 1/11/2/13;
+}
+.storeCta__support-text {
+  max-width: 64ch;
+  margin-bottom: 2rem;
+}
+.storeCta__button {
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=style.css.map */

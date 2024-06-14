@@ -120,7 +120,7 @@
     flex-shrink: 0;
     width: 3rem;
     height: 3rem;
-    background-color: #fff;
+    background-color: var(--black);
     border-radius: 0.625rem;
   }
   &__slider-item-text {
