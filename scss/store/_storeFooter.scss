@@ -1,17 +1,8 @@
 @use "../util/" as u;
 
-.footer {
-  background-color: var(--bg);
-  // border-top: 4px solid var(--black);
-  // padding-bottom: 64px;
+.storeFooter {
+  background-color: var(--black);
 
-  // @include u.breakpoint-up(medium) {
-  //     padding-bottom: 120px;
-  // }
-
-  // @include u.breakpoint-up(large) {
-  //     padding-bottom: 120px;
-  // }
 
   &__wrapper {
     display: flex;
@@ -119,7 +110,7 @@
   }
   &__button {
     &:hover {
-      background-color: var(--black);
+      background-color: var(--bg);
     }
   }
   &__form-p {
@@ -170,6 +161,9 @@
       @include u.breakpoint-down(small) {
         margin-bottom: 0.5rem;
       }
+    }
+    p:nth-of-type(2) {
+        margin-bottom: 1rem;
     }
 
     @include u.breakpoint-down(small2) {
