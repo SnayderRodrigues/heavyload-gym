@@ -11,6 +11,69 @@
     />
     <title>Heavyload Store | Roupas e Acessórios para Treino</title>
   </head>
+  <header class="storeHeader">
+    <div class="wrapper storeHeader__wrapper">
+      <a href="#" class="link storeHeader__logo"
+        >HEAVYLOAD<span>STORE</span>
+      </a>
+      <nav class="storeHeader__navbar">
+        <div class="storeHeader__list-div" id="list-div">
+          <ul class="storeHeader__list">
+            <li class="storeHeader__list-item">
+              <a href="#storeCategories" class="storeHeader__link"
+                ><span class="link-text-1">Categorias</span
+                ><span class="link-text-2">Categorias</span></a
+              >
+            </li>
+            <li class="storeHeader__list-item">
+              <a href="#storeArrivals" class="storeHeader__link"
+                ><span class="link-text-1">Lançamentos</span
+                ><span class="link-text-2">Lançamentos</span></a
+              >
+            </li>
+            <li class="storeHeader__list-item">
+              <a href="#storeSports" class="storeHeader__link"
+                ><span class="link-text-1">Esportes</span
+                ><span class="link-text-2">Esportes</span></a
+              >
+            </li>
+            <li class="storeHeader__list-item">
+              <a href="/" class="storeHeader__link"
+                ><span class="link-text-1"
+                  >Heavyload<span class="highlight">Gym</span></span
+                ><span class="link-text-2"
+                  >Heavyload<span class="highlight">Gym</span></span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="storeHeader__search-wrapper">
+        <form role="search" class="storeHeader__search">
+          <div class="storeHeader__search-button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
+          </div>
+          <label for="searchInput" class="visually-hidden">Buscar</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="BUSCAR PRODUTO"
+            class="storeHeader__searchbar"
+          />
+        </form>
+        <button class="button storeHeader__button">Buscar</button>
+      </div>
+      <div class="storeHeader__menu">
+        <div class="storeHeader__menu-button"></div>
+      </div>
+    </div>
+  </header>
   <body>
     <div id="storePreloader">
       <div class="loading">
@@ -26,69 +89,6 @@
         </svg>
       </div>
     </div>
-    <header class="storeHeader">
-      <div class="wrapper storeHeader__wrapper">
-        <a href="#" class="link storeHeader__logo"
-          >HEAVYLOAD<span>STORE</span>
-        </a>
-        <nav class="storeHeader__navbar">
-          <div class="storeHeader__list-div" id="list-div">
-            <ul class="storeHeader__list">
-              <li class="storeHeader__list-item">
-                <a href="#storeCategories" class="storeHeader__link"
-                  ><span class="link-text-1">Categorias</span
-                  ><span class="link-text-2">Categorias</span></a
-                >
-              </li>
-              <li class="storeHeader__list-item">
-                <a href="#storeArrivals" class="storeHeader__link"
-                  ><span class="link-text-1">Lançamentos</span
-                  ><span class="link-text-2">Lançamentos</span></a
-                >
-              </li>
-              <li class="storeHeader__list-item">
-                <a href="#storeSports" class="storeHeader__link"
-                  ><span class="link-text-1">Esportes</span
-                  ><span class="link-text-2">Esportes</span></a
-                >
-              </li>
-              <li class="storeHeader__list-item">
-                <a href="/" class="storeHeader__link"
-                  ><span class="link-text-1"
-                    >Heavyload<span class="highlight">Gym</span></span
-                  ><span class="link-text-2"
-                    >Heavyload<span class="highlight">Gym</span></span
-                  ></a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="storeHeader__search-wrapper">
-          <form role="search" class="storeHeader__search">
-            <div class="storeHeader__search-button-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                />
-              </svg>
-            </div>
-            <label for="searchInput" class="visually-hidden">Buscar</label>
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="BUSCAR PRODUTO"
-              class="storeHeader__searchbar"
-            />
-          </form>
-          <button class="button storeHeader__button">Buscar</button>
-        </div>
-        <div class="storeHeader__menu">
-          <div class="storeHeader__menu-button"></div>
-        </div>
-      </div>
-    </header>
     <main>
       <section class="storeHero">
         <div class="wrapper storeHero__wrapper">

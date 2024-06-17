@@ -1269,7 +1269,7 @@ h3 {
 .store .second {
   width: 100%;
   height: 496px;
-  background-image: url(/assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
+  background-image: url(/assets/images/sule-makaroglu-8opGXsff3uc-unsplash-_1_.webp);
   background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2333,6 +2333,8 @@ h3 {
   flex: 1;
   height: 400px;
   background-color: var(--black);
+  background-position: center center;
+  background-size: cover;
   border-radius: 1.125rem;
   transition: all 400ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
@@ -2341,6 +2343,16 @@ h3 {
 }
 .storeCta__image:nth-of-type(1) {
   flex: 3;
+  background-image: url(../../assets/images/pexels-pavel-danilyuk-6295749-_1_.webp);
+}
+.storeCta__image:nth-of-type(2) {
+  background-image: url(../../assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
+}
+.storeCta__image:nth-of-type(3) {
+  background-image: url(../../assets/images/anastase-maragos-YVz1LxVJqoA-unsplash-_1_.webp);
+}
+.storeCta__image:nth-of-type(4) {
+  background-image: url(../../assets/images/craig-lovelidge-yDGsn39fbD4-unsplash.webp);
 }
 .storeCta__support-text {
   max-width: 64ch;
