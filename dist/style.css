@@ -2144,7 +2144,7 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   line-height: 1;
-  background-color: var(--bg);
+  background-color: var(--black-2);
   padding: 0.375rem 0.5rem;
   border-radius: 0.625rem;
 }
@@ -2158,6 +2158,9 @@ h3 {
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
+}
+.storeArrivals__item-button-cart:hover, .storeArrivals__item-button-info:hover {
+  background-color: var(--bg);
 }
 .storeArrivals__item-button-cart {
   gap: 1rem;
@@ -2233,7 +2236,7 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   line-height: 1;
-  background-color: var(--bg);
+  background-color: var(--black-2);
   padding: 0.375rem 0.5rem;
   border-radius: 0.625rem;
 }
@@ -2247,6 +2250,9 @@ h3 {
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
+}
+.storeBestSellers__item-button-cart:hover, .storeBestSellers__item-button-info:hover {
+  background-color: var(--bg);
 }
 .storeBestSellers__item-button-cart {
   gap: 1rem;
