@@ -1957,16 +1957,26 @@ h3 {
   align-items: center;
 }
 .storeHero__subtitle-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
   background-color: #fff;
   border-radius: 50%;
   margin-left: -0.75rem;
 }
+.storeHero__subtitle-info-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .storeHero__subtitle-info-icon:nth-of-type(1) {
   background-color: var(--white);
   position: relative;
   z-index: 1;
+}
+.storeHero__subtitle-info-icon:nth-of-type(1) svg path {
+  fill: var(--black);
 }
 .storeHero__subtitle-info-icon:nth-of-type(2) {
   background-color: var(--red);
@@ -2027,10 +2037,17 @@ h3 {
 }
 .storeHero__slider-item-icon {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
   background-color: var(--black);
   border-radius: 0.625rem;
+}
+.storeHero__slider-item-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .storeHero__slider-item-text {
   font-weight: 600;
