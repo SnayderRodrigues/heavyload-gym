@@ -27,13 +27,36 @@
     gap: 1rem;
 
     & > * {
-        cursor: pointer;
+      cursor: pointer;
     }
+  }
+  &__item:nth-of-type(1) > &__item-image {
+    background-image: url(../../assets/images/store/gordon-cowie-SGRfzXSyRDw-unsplash.webp);
+    background-position: 60% center;
+  }
+  &__item:nth-of-type(2) > &__item-image {
+    background-image: url(../../assets/images/store/jahir-martinez-YFJn6-GZVuw-unsplash.webp);
+  }
+  &__item:nth-of-type(3) > &__item-image {
+    background-image: url(../../assets/images/store/daniil-zanevskiy-NIZS__PjZyM-unsplash.webp);
+  }
+  &__item:nth-of-type(4) > &__item-image {
+    background-image: url(../../assets/images/store/andreea-boncota-ISQ8iBgjni8-unsplash.webp);
+    background-position: center 20%;
+  }
+  &__item:nth-of-type(5) > &__item-image {
+    background-image: url(../../assets/images/store/nathan-dumlao-Ps-_RF_JhsM-unsplash.webp);
+    background-position: center center;
+  }
+  &__item:nth-of-type(6) > &__item-image {
+    background-image: url(../../assets/images/store/eduardo-drapier-ipLwOIFm_qQ-unsplash.webp);
+    background-position: center center;
   }
   &__item-image {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: var(--black);
+    background-size: cover;
     border-radius: 50%;
   }
   &__item-title {

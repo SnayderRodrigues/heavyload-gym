@@ -2324,10 +2324,33 @@ h3 {
 .storeSports__item > * {
   cursor: pointer;
 }
+.storeSports__item:nth-of-type(1) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/gordon-cowie-SGRfzXSyRDw-unsplash.webp);
+  background-position: 60% center;
+}
+.storeSports__item:nth-of-type(2) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/jahir-martinez-YFJn6-GZVuw-unsplash.webp);
+}
+.storeSports__item:nth-of-type(3) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/daniil-zanevskiy-NIZS__PjZyM-unsplash.webp);
+}
+.storeSports__item:nth-of-type(4) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/andreea-boncota-ISQ8iBgjni8-unsplash.webp);
+  background-position: center 20%;
+}
+.storeSports__item:nth-of-type(5) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/nathan-dumlao-Ps-_RF_JhsM-unsplash.webp);
+  background-position: center center;
+}
+.storeSports__item:nth-of-type(6) > .storeSports__item-image {
+  background-image: url(../../assets/images/store/eduardo-drapier-ipLwOIFm_qQ-unsplash.webp);
+  background-position: center center;
+}
 .storeSports__item-image {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: var(--black);
+  background-size: cover;
   border-radius: 50%;
 }
 .storeSports__item-title {
@@ -2374,7 +2397,8 @@ h3 {
   background-image: url(../../assets/images/pexels-pavel-danilyuk-6295749-_1_.webp);
 }
 .storeCta__image:nth-of-type(2) {
-  background-image: url(../../assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.webp);
+  background-image: url(../../assets/images/sule-makaroglu-r3C6ghRxDxc-unsplash-_1_.webp);
+  background-position: 65% center;
 }
 .storeCta__image:nth-of-type(3) {
   background-image: url(../../assets/images/anastase-maragos-YVz1LxVJqoA-unsplash-_1_.webp);
