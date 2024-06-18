@@ -1826,13 +1826,28 @@ h3 {
 .storeHeader__link:hover .link-text-2 {
   transform: translateY(0%);
 }
-.storeHeader__button {
+.storeHeader__button-search {
   padding: 12px clamp(0.75rem, -1.1428571429rem + 5.7142857143vh, 1rem);
 }
 @media (max-width: 31.24875em) {
-  .storeHeader__button {
+  .storeHeader__button-search {
     display: none;
   }
+}
+.storeHeader__button-cart, .storeHeader__button-profile {
+  background-color: transparent;
+  cursor: pointer;
+}
+.storeHeader__button-cart svg, .storeHeader__button-profile svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.storeHeader__button-cart svg path, .storeHeader__button-profile svg path {
+  fill: var(--white);
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.storeHeader__button-cart:hover svg path, .storeHeader__button-profile:hover svg path {
+  fill: var(--red);
 }
 .storeHeader__menu {
   display: none;
@@ -1897,24 +1912,27 @@ h3 {
 .storeHeader__search {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   background-color: var(--black);
-  padding: 12px clamp(0.75rem, -1.1428571429rem + 5.7142857143vh, 1rem);
   border-radius: 0.625rem;
   margin: 0;
+  position: relative;
+}
+.storeHeader__searchbar {
+  padding: 12px clamp(0.75rem, -1.1428571429rem + 5.7142857143vh, 1rem);
+  padding-left: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 .storeHeader__search-button-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: var(--white);
-  padding: 0.25rem;
-  border-radius: 50%;
+  position: absolute;
+  left: 1rem;
 }
-.storeHeader__search-button-icon:hover {
-  background-color: var(--dark-gray);
+.storeHeader__search-button-icon svg {
+  width: 1rem;
+  height: 1rem;
 }
 .storeHeader__search-button-icon svg path {
-  fill: var(--white);
+  fill: #757575;
 }
 
 .storeHero {
