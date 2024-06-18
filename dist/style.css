@@ -2077,10 +2077,29 @@ h3 {
   width: 100%;
   height: 270px;
   background-color: var(--black);
+  background-position: center center;
   padding: 2rem;
   border-radius: 1.125rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+.storeCategories__category:hover {
+  background-size: 20%;
+}
+.storeCategories__category:nth-of-type(1) {
+  background-image: url(../../assets/images/anastase-maragos-jzP8_Rg6aVU-unsplash-_1_.webp);
+  background-size: cover;
+  background-position: center 20%;
+}
+.storeCategories__category:nth-of-type(2) {
+  background-image: url(../../assets/images/pexels-mikhail-nilov-6740821-_1_.webp);
+  background-size: cover;
+  background-position: center 15%;
+}
+.storeCategories__category:nth-of-type(3) {
+  background-image: url(../../assets/images/pexels-marcuschanmedia-17898142-_1_.webp);
+  background-size: cover;
+  background-position: center 85%;
 }
 
 .storeArrivals {
