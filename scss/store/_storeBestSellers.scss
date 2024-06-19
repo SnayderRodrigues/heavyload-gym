@@ -37,17 +37,17 @@
     padding: 1rem;
   }
   &__item-favorite {
-    width: 1.5rem;
-    height: 1.5rem;
-
     svg {
-        path {
-            fill: var(--bg);
-            cursor: pointer;
-        }
-        path:hover {
-            fill: var(--red);
-        }
+      width: 1.75rem;
+      height: 1.75rem;
+      path {
+        fill: var(--bg);
+        cursor: pointer;
+        transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      path:hover {
+        fill: var(--red);
+      }
     }
   }
   &__item-description {
@@ -72,25 +72,75 @@
     align-items: center;
     gap: 1rem;
   }
-  &__item-button-cart, &__item-button-info {
+  &__item-add {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: fit-content;
+    gap: 1rem;
+    background-color: var(--red);
+    padding: 1rem;
 
     &:hover {
       background-color: var(--bg);
     }
-  }
-  &__item-button-cart {
-    gap: 1rem;
-    background-color: var(--green);
-    padding: 1rem;
+
     svg {
-        width: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
-        height: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
-        path {
-            fill: var(--white);
-        }
+      width: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
+      height: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
+      path {
+        fill: var(--white);
+      }
+    }
+  }
+  &__item-value-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 5rem;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+  .cartInput {
+    // width: 40px;
+    width: 100%;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    background: none;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  &__item-value-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--white);
+
+    button {
+      color: var(--black);
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: transparent;
+      padding: 0.25rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 100ms linear;
+
+      &:hover {
+        background-color: var(--gray);
+      }
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
     }
   }
 }

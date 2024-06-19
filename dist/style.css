@@ -94,6 +94,16 @@ input {
   color: inherit;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 textarea {
   padding: 0;
 }
@@ -2170,13 +2180,14 @@ h3 {
   background-color: var(--white);
   padding: 1rem;
 }
-.storeArrivals__item-favorite {
-  width: 1.5rem;
-  height: 1.5rem;
+.storeArrivals__item-favorite svg {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 .storeArrivals__item-favorite svg path {
   fill: var(--bg);
   cursor: pointer;
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .storeArrivals__item-favorite svg path:hover {
   fill: var(--red);
@@ -2204,26 +2215,71 @@ h3 {
   align-items: center;
   gap: 1rem;
 }
-.storeArrivals__item-button-cart, .storeArrivals__item-button-info {
+.storeArrivals__item-add {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
-}
-.storeArrivals__item-button-cart:hover, .storeArrivals__item-button-info:hover {
-  background-color: var(--bg);
-}
-.storeArrivals__item-button-cart {
   gap: 1rem;
-  background-color: var(--green);
+  background-color: var(--red);
   padding: 1rem;
 }
-.storeArrivals__item-button-cart svg {
+.storeArrivals__item-add:hover {
+  background-color: var(--bg);
+}
+.storeArrivals__item-add svg {
   width: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
   height: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
 }
-.storeArrivals__item-button-cart svg path {
+.storeArrivals__item-add svg path {
   fill: var(--white);
+}
+.storeArrivals__item-value-wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 5rem;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.storeArrivals .cartInput {
+  width: 100%;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  background: none;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+.storeArrivals__item-value-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--white);
+}
+.storeArrivals__item-value-control button {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+}
+.storeArrivals__item-value-control button:hover {
+  background-color: var(--gray);
+}
+.storeArrivals__item-value-control button svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .storeBestSellers {
@@ -2262,13 +2318,14 @@ h3 {
   background-color: var(--white);
   padding: 1rem;
 }
-.storeBestSellers__item-favorite {
-  width: 1.5rem;
-  height: 1.5rem;
+.storeBestSellers__item-favorite svg {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 .storeBestSellers__item-favorite svg path {
   fill: var(--bg);
   cursor: pointer;
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .storeBestSellers__item-favorite svg path:hover {
   fill: var(--red);
@@ -2296,26 +2353,71 @@ h3 {
   align-items: center;
   gap: 1rem;
 }
-.storeBestSellers__item-button-cart, .storeBestSellers__item-button-info {
+.storeBestSellers__item-add {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
-}
-.storeBestSellers__item-button-cart:hover, .storeBestSellers__item-button-info:hover {
-  background-color: var(--bg);
-}
-.storeBestSellers__item-button-cart {
   gap: 1rem;
-  background-color: var(--green);
+  background-color: var(--red);
   padding: 1rem;
 }
-.storeBestSellers__item-button-cart svg {
+.storeBestSellers__item-add:hover {
+  background-color: var(--bg);
+}
+.storeBestSellers__item-add svg {
   width: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
   height: clamp(1rem, 0.8481012658rem + 0.3164556962vw, 1.125rem);
 }
-.storeBestSellers__item-button-cart svg path {
+.storeBestSellers__item-add svg path {
   fill: var(--white);
+}
+.storeBestSellers__item-value-wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 5rem;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.storeBestSellers .cartInput {
+  width: 100%;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  background: none;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+.storeBestSellers__item-value-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--white);
+}
+.storeBestSellers__item-value-control button {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+}
+.storeBestSellers__item-value-control button:hover {
+  background-color: var(--gray);
+}
+.storeBestSellers__item-value-control button svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .storeSports {

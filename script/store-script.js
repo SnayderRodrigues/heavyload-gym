@@ -20,3 +20,19 @@ window.addEventListener("scroll", function () {
     header.classList.remove("opaque");
   }
 });
+
+const cartPlusIcons = document.querySelectorAll(".cartPlusIcon");
+const cartMinusIcons = document.querySelectorAll(".cartMinusIcon");
+const cartInputs = document.querySelectorAll(".cartInput");
+
+cartPlusIcons.forEach((cartPlus, index) => {
+  cartPlus.addEventListener("click", () => {
+    cartInputs[index].stepUp();
+  });
+});
+
+cartMinusIcons.forEach((cartMinus, index) => {
+  cartMinus.addEventListener("click", () => {
+    cartInputs[index].stepDown();
+  });
+});
