@@ -2111,36 +2111,48 @@ h3 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   width: 100%;
   height: 270px;
-  background-color: var(--black);
-  background-position: center center;
-  background-size: cover;
   padding: 1rem;
   border-radius: 1.125rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   transition: filter 200ms linear;
+  cursor: pointer;
+  overflow: hidden;
 }
 .storeCategories__category span {
   text-shadow: 10px 10px 20px black;
 }
-.storeCategories__category:nth-of-type(1) {
-  background-image: url(../../assets/images/anastase-maragos-jzP8_Rg6aVU-unsplash-_1_.webp);
-  background-position: center 20%;
+.storeCategories__category-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 20%;
+     object-position: center 20%;
 }
-.storeCategories__category:nth-of-type(2) {
-  background-image: url(../../assets/images/pexels-mikhail-nilov-6740821-_1_.webp);
-  background-position: center 15%;
+.storeCategories__category:nth-of-type(1) > .storeCategories__category-image {
+  -o-object-position: center 20%;
+     object-position: center 20%;
 }
-.storeCategories__category:nth-of-type(3) {
-  background-image: url(../../assets/images/pexels-marcuschanmedia-17898142-_1_.webp);
-  background-position: center 85%;
+.storeCategories__category:nth-of-type(2) > .storeCategories__category-image {
+  -o-object-position: center 15%;
+     object-position: center 15%;
 }
-.storeCategories__category:hover {
+.storeCategories__category:nth-of-type(3) > .storeCategories__category-image {
+  -o-object-position: center 85%;
+     object-position: center 85%;
+}
+.storeCategories__category-image:hover {
   filter: grayscale(0%);
 }
 
@@ -2242,14 +2254,13 @@ h3 {
   height: 50px;
   width: 5rem;
   background-color: var(--white);
-  border: 1px solid transparent;
   border-radius: 0.625rem;
   overflow: hidden;
 }
 .storeArrivals .cartInput {
   width: 100%;
   color: var(--black);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-align: center;
   background: none;
@@ -2266,20 +2277,20 @@ h3 {
 }
 .storeArrivals__item-value-control button {
   color: var(--black);
-  font-size: 1rem;
-  font-weight: 700;
   background-color: transparent;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  padding: 0.25rem 0.375rem;
   cursor: pointer;
   transition: background-color 100ms linear;
 }
 .storeArrivals__item-value-control button:hover {
-  background-color: var(--gray);
+  background-color: #d3d3d3;
 }
 .storeArrivals__item-value-control button svg {
   width: 1rem;
   height: 1rem;
+}
+.storeArrivals__item-value-control button:nth-of-type(1) svg {
+  height: calc(1rem + 1px);
 }
 
 .storeBestSellers {
@@ -2380,14 +2391,13 @@ h3 {
   height: 50px;
   width: 5rem;
   background-color: var(--white);
-  border: 1px solid transparent;
   border-radius: 0.625rem;
   overflow: hidden;
 }
 .storeBestSellers .cartInput {
   width: 100%;
   color: var(--black);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-align: center;
   background: none;
@@ -2404,20 +2414,20 @@ h3 {
 }
 .storeBestSellers__item-value-control button {
   color: var(--black);
-  font-size: 1rem;
-  font-weight: 700;
   background-color: transparent;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  padding: 0.25rem 0.375rem;
   cursor: pointer;
   transition: background-color 100ms linear;
 }
 .storeBestSellers__item-value-control button:hover {
-  background-color: var(--gray);
+  background-color: #d3d3d3;
 }
 .storeBestSellers__item-value-control button svg {
   width: 1rem;
   height: 1rem;
+}
+.storeBestSellers__item-value-control button:nth-of-type(1) svg {
+  height: calc(1rem + 1px);
 }
 
 .storeSports {
