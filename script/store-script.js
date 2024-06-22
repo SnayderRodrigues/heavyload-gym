@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function showAlert() {
+  alert(
+    "Esta seção está em fase de desenvolvimento. Agradecemos sua compreensão!"
+  );
+}
+
+window.onload = showAlert;
+
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
