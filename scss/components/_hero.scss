@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  min-height: 100svh;
   background-color: transparent;
   padding: 120px 0;
   position: relative;
@@ -76,7 +76,9 @@
     bottom: clamp(2rem, -13.142857142857142rem + 45.714285714285715vh, 4rem);
 
     @include u.breakpoint-down(small) {
-      display: none;
+      // display: none;
+      flex-direction: column;
+      align-items: start;
     }
 
     div{
