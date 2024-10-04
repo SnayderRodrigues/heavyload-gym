@@ -46,10 +46,10 @@
   &__navbar {
     display: flex;
     align-items: center;
-    gap: 24px;
-
-    @include u.breakpoint-up(medium) {
-      gap: 0;
+    gap: 0;
+    
+    @include u.breakpoint-down(medium) {
+      gap: 24px;
     }
   }
   &__list-div {

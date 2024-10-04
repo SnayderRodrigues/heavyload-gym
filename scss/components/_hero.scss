@@ -76,11 +76,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     width: fit-content;
     position: relative;
 
-    @include u.breakpoint-down(small2) {
-      flex-direction: column;
+    .button.ghost {
+      background-color: hsl(0, 98%, 19%);
+
+      &:hover {
+        background: var(--bg);
+      }
     }
   }
   &__highlights-wrapper {
