@@ -198,12 +198,7 @@ h3 span {
 }
 
 h1 {
-  font-size: clamp(3.25rem, -1352.75rem + 3200vh, 4.25rem);
-}
-@media (max-width: 87.49875em) {
-  h1 {
-    font-size: clamp(2.75rem, 2.6017145505rem + 0.7414272475vw, 3.25rem);
-  }
+  font-size: clamp(2rem, 1.0420792079rem + 3.5643564356vw, 4.25rem);
 }
 
 h2 {
@@ -496,11 +491,28 @@ h3 {
   align-items: flex-start;
   position: relative;
   z-index: 2;
+  margin-bottom: 4rem;
+}
+@media (max-width: 47.99875em) {
+  .hero__wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 31.24875em) {
+  .hero__wrapper {
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .hero__headline-wrapper {
   position: relative;
   max-width: 850px;
   margin-bottom: clamp(1.5rem, -6.0714285714rem + 22.8571428571vh, 2.5rem);
+}
+@media (max-width: 26.62375em) {
+  .hero__headline-wrapper {
+    margin-bottom: 1.5rem;
+  }
 }
 .hero__headline-wrapper p:first-of-type {
   font-weight: 600;
@@ -513,6 +525,11 @@ h3 {
   margin-bottom: clamp(1.5rem, -6.0714285714rem + 22.8571428571vh, 2.5rem);
   max-width: 18ch;
 }
+@media (max-width: 26.62375em) {
+  .hero__headline {
+    margin-bottom: 1.5rem;
+  }
+}
 .hero__headline-description {
   font-size: clamp(1rem, 0.6962025316rem + 0.6329113924vw, 1.25rem);
   max-width: 48ch;
@@ -523,7 +540,6 @@ h3 {
   justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 2rem;
   position: relative;
 }
 @media (max-width: 31.24875em) {
@@ -533,31 +549,33 @@ h3 {
 }
 .hero__highlights-wrapper {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  position: absolute;
-  bottom: clamp(2rem, -13.1428571429rem + 45.7142857143vh, 4rem);
-}
-@media (max-width: 47.99875em) {
-  .hero__highlights-wrapper {
-    flex-direction: column;
-    align-items: start;
-  }
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .hero__highlights-wrapper div {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
+  background-color: var(--bg);
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+}
+@media (max-width: 26.62375em) {
+  .hero__highlights-wrapper div {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 }
 .hero__highlights-wrapper div span {
   flex-shrink: 0;
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: var(--red);
   border-radius: 50%;
 }

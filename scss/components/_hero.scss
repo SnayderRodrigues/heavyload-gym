@@ -21,6 +21,15 @@
     align-items: flex-start;
     position: relative;
     z-index: 2;
+    margin-bottom: 4rem;
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: 2rem;
+    }
+    @include u.breakpoint-down(small2) {
+      margin-top: 8rem;
+      margin-bottom: 1.5rem;
+    }
   }
   &__headline-wrapper {
     position: relative;
@@ -30,6 +39,10 @@
       -6.071428571428571rem + 22.857142857142858vh,
       2.5rem
     );
+
+    @include u.breakpoint-down(xsmall) {
+      margin-bottom: 1.5rem;
+    }
 
     p:first-of-type {
       font-weight: 600;
@@ -46,6 +59,10 @@
       2.5rem
     );
     max-width: 18ch;
+
+    @include u.breakpoint-down(xsmall) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__headline-description {
     font-size: clamp(
@@ -57,11 +74,9 @@
   }
   &__button-wrapper {
     display: flex;
-    // flex-direction: column;
     align-items: center;
     justify-content: center;
     width: fit-content;
-    margin-bottom: 2rem;
     position: relative;
 
     @include u.breakpoint-down(small2) {
@@ -70,31 +85,32 @@
   }
   &__highlights-wrapper {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    position: absolute;
-    bottom: clamp(2rem, -13.142857142857142rem + 45.714285714285715vh, 4rem);
+    flex-wrap: wrap;
+    gap: 1rem;
 
-    @include u.breakpoint-down(small) {
-      // display: none;
-      flex-direction: column;
-      align-items: start;
-    }
-
-    div{
+    div {
+      flex-shrink: 0;
       display: flex;
       align-items: center;
       gap: 1rem;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
+      background-color: var(--bg);
+      padding: 0.75rem;
+      border-radius: 0.625rem;
+
+      @include u.breakpoint-down(xsmall) {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+      }
 
       span {
         flex-shrink: 0;
         display: block;
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         background-color: var(--red);
         border-radius: 50%;
       }
